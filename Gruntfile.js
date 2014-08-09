@@ -6,21 +6,21 @@ module.exports = function (grunt) {
 		},		
 		uglify: {
 			dist: {
-				src: 'includes/js/script.js',
-				dest: 'includes/js/script.min.js'
+				src: 'js/main.js',
+				dest: 'js/main.min.js'
 			}
 		},		
 		sass: {
 		    dist: {
 		      files: {
-		        'includes/css/styles.css': 'includes/css/styles.scss'
+		        'css/main.css': 'css/main.scss'
 		      }
 		    }
 		  },		  
 		cssmin: {
 		  combine: {
 		    files: {
-		      'includes/css/styles.min.css': ['includes/css/styles.css']
+		      'css/styles.min.css': ['css/styles.css']
 		    }
 		  }
 		}				
