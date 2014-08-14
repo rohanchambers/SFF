@@ -4,7 +4,7 @@ $(document).ready( function(){
 
 	$(nav).bind('click',function(event){
 		
-		nav.hide();
+		//nav.hide();
 	    
 	    var $anchor = $(this);
 	    
@@ -14,7 +14,7 @@ $(document).ready( function(){
 	   
 	    }, 500, function(){
 		    
-	    	$('.main-nav li a').fadeIn();
+	    	// $('.main-nav li a').fadeIn();
 	    		    
 	    });
 

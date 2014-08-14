@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* SOHO FILM FINANCE SITE | DEVELOPED BY ROHAN CHAMBERS | 14 August 2014 */
 
 html,
 button,
@@ -58,7 +58,7 @@ textarea {
 
 
 /* ==========================================================================
-   Author's custom styles
+   Custom styles
    ========================================================================== */
 
 /* SASS Variables */
@@ -95,16 +95,12 @@ h2, h3,
 #arrow p,
 #regulatory-environment p,
 #star span,
-#credentials-list li {
+#credentials-list li,
+#our-products-copy p {
     font-family: 'univers49', serif;
 }
 
 /* Typgraphy */
-p {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 13px;
-}
-
 h1 { 
     font-size: 22px;
 }
@@ -123,6 +119,11 @@ h3 {
 h1, h2 {
     margin: 15px 0;
     line-height: 1.2;
+}
+
+p {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
 }
 
 /* Text style */
@@ -175,10 +176,9 @@ footer {
                 text-decoration: none;
                 line-height: 30px;
             }
-
     }
 
-/* WRAPPERS */
+/* SLIDES */
 .wrapper {
     position: relative;
     width: 100%;
@@ -186,7 +186,9 @@ footer {
     min-height: 1000px; 
 }
 
-#welcome, #directors, #milesAhead, #mission, #our-products, #wrapper-6, #wrapper-7, #wrapper-8, #wrapper-9, #wrapper-10 {
+#welcome, #directors, #milesAhead, #mission, 
+#our-products, #wrapper-6, #wrapper-7, #wrapper-8, 
+#wrapper-9, #wrapper-10 {
     border-bottom: 10px solid $primary-color;
 }
 
@@ -238,7 +240,6 @@ footer {
 }
 
 
-
 /* DIRECTORS SLIDE */
 #directors .container {
     padding-top: 30px;
@@ -262,7 +263,8 @@ footer {
     }
 
 
-.profile {    
+.profile {
+
     margin: 50px 0;
 
     img {
@@ -390,6 +392,7 @@ footer {
     }
 
     #mission-points {
+
         float: right;
         margin: 0;
         padding: 0;
@@ -449,20 +452,20 @@ footer {
         background-color: #e4eaed;
     }
 
-#regulatory-environment p {
-    font-size: 50px;
-    text-transform: uppercase;
-    line-height: 1.2;
-    margin: 0;
-}
-
-    #regulatory-environment p span:nth-child(odd) {
-        color: #313133;
+    #regulatory-environment p {
+        font-size: 50px;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin: 0;
     }
 
-    #regulatory-environment p span:nth-child(even) {
-        color: $primary-color;
-    }
+        #regulatory-environment p span:nth-child(odd) {
+            color: #313133;
+        }
+
+        #regulatory-environment p span:nth-child(even) {
+            color: $primary-color;
+        }
 
 #star {
     position: relative;
@@ -488,7 +491,9 @@ footer {
 }
 
     #credentials-list {
+        
         width: 400px;
+        
         li {
             display: block;
             margin-bottom: 20px;
@@ -501,30 +506,29 @@ footer {
     }
 
 
-
 /* Mission and Values */
-#our-products .col-1 {
-    width: 50%;
-    min-height: 600px;
-    margin: 0;
-    background-color: red;        
-}
-
+#our-products .col-1,
 #our-products .col-2 {
-    width: 50%;
-    min-height: 600px;
-    margin: 0;
-    background-color: blue;  
+    width: 48%;
+    min-height: 760px;
+    margin: 0;   
+    padding-bottom: 20px;   
 }
 
     #our-products-copy {
         min-height: 308px;
         padding-left: 175px;
         background: url(../img/products/bg_products.png) no-repeat top left;
+        
+            p {
+                font-size: 20px;
+            }
     }
 
 #what-we-offer {
+    
     margin-top: 50px;
+    
     h2 {
         text-align: center;
     }
@@ -535,7 +539,7 @@ footer {
             position: relative;
             display: block;
             float: left;
-            width: 100px;
+            width: 90px;
             margin: 0 25px 0 0;
             padding: 110px 0 0 0;
             list-style: none;
@@ -561,8 +565,42 @@ footer {
     }
 }
 
+#scenario {
+    position: relative;
 
+        #circle {
+            position: relative;
+            z-index: 1;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background: url(../img/products/bg_SFF_circle.png) no-repeat; 
+        }
 
+        #scenario-copy {
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+            padding: 110px 0 30px 0;
+            background: $primary-color;
+            color: #FFF;
+                
+                h2 {
+                    color: #FFF;
+                    width: 82%;
+                    margin: 0 8%;  
+                }
+
+                p {
+                    font-size: 12px;
+                    width: 82%;
+                    margin-left: 8%;
+                    margin-right: 8%;                          
+                }            
+        }
+}
 
 
 
