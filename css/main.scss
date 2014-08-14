@@ -84,11 +84,14 @@ $primary-color: #7E929B;
 }
 
 h1, 
-#about-us p {
+#about-us p,
+#mission-points li span {
      font-family: 'trajanPro', serif; 
 }
 
-h2, h3, #milesAhead {
+h2, h3, 
+#milesAhead,
+#arrow p {
     font-family: 'univers49', serif;
 }
 
@@ -183,7 +186,7 @@ footer {
     border-bottom: 10px solid red;
 }
 
-#directors, #wrapper-4, #wrapper-6, #wrapper-8, #wrapper-10 {
+#directors, #mission, #wrapper-6, #wrapper-8, #wrapper-10 {
     border-bottom: 10px solid blue;
 }
 
@@ -356,16 +359,82 @@ footer {
 
 
 /* Mission and Values */
-#mission .col-1,
-#mission .col-2 {
+#mission .col-1 {
     width: 50%;
+    min-height: 600px;
+    margin: 0;
+    padding-top: 50px;
+    background-color: #e4eaed;        
 }
 
-    #mission .col-1 {
-        background-color: $primary-color;
+#mission .col-2 {
+    width: 40%;
+}
+
+    #arrow {
+        float: left;
+        margin-top: 255px;
+        width: 150px;
+        height: 100px;
+        background: url(../img/mission/bg_arrow.png) no-repeat;
+        background-size: 100%;
+
+        p {
+            font-size: 22px;
+            color: #FFF;
+            text-transform: uppercase;        
+            line-height: 60px;
+            text-align: left;
+            padding-left: 10px;            
+        }
     }
 
-    #arrow {}
+    #mission-points {
+        float: right;
+        margin: 0;
+        padding: 0;
+
+        li {
+            position: relative;
+            display: block;
+            width: 200px;
+            min-height: 100px;
+            margin: 0 0 20px 0;
+            padding-left: 100px;
+            background: url(../img/mission/bg_bullet.png) no-repeat top left;
+            background-size: 30%;
+            
+            span {
+                position: absolute;
+                top: 20%;
+                left: 35px;
+                font-size: 40px;
+                color: #FFF;
+            }
+
+            h3 {
+                font-size: 24px;
+                color: #000;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            p {
+                font-size: 12px;
+                margin: 0;
+            }
+        }    
+    }
+
+#worldwide h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#worldwide img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* ==========================================================================
    Media Queries

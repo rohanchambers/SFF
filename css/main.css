@@ -64,10 +64,13 @@ textarea {
   src: url("../fonts/univers/univers-49/univers-49-ultra-condensed-light.eot?") format("eot"), url("../fonts/univers/univers-49/univers-49-ultra-condensed-light.woff") format("woff"), url("../fonts/univers/univers-49/univers-49-ultra-condensed-light.ttf") format("truetype"), url("../fonts/univers/univers-49/univers-49-ultra-condensed-light.svg#fonts/univers/univers-49/univers-49-ultra-condensed-light") format("svg");
   /* Legacy iOS */ }
 h1,
-#about-us p {
+#about-us p,
+#mission-points li span {
   font-family: 'trajanPro', serif; }
 
-h2, h3, #milesAhead {
+h2, h3,
+#milesAhead,
+#arrow p {
   font-family: 'univers49', serif; }
 
 /* Typgraphy */
@@ -141,7 +144,7 @@ footer {
 #welcome, #milesAhead, #wrapper-5, #wrapper-7, #wrapper-9 {
   border-bottom: 10px solid red; }
 
-#directors, #wrapper-4, #wrapper-6, #wrapper-8, #wrapper-10 {
+#directors, #mission, #wrapper-6, #wrapper-8, #wrapper-10 {
   border-bottom: 10px solid blue; }
 
 .container {
@@ -265,12 +268,66 @@ footer {
   background: url(../img/milesAhead/milesAhead_person.jpg) no-repeat; }
 
 /* Mission and Values */
-#mission .col-1,
-#mission .col-2 {
-  width: 50%; }
-
 #mission .col-1 {
-  background-color: #7e929b; }
+  width: 50%;
+  min-height: 600px;
+  margin: 0;
+  padding-top: 50px;
+  background-color: #e4eaed; }
+
+#mission .col-2 {
+  width: 40%; }
+
+#arrow {
+  float: left;
+  margin-top: 255px;
+  width: 150px;
+  height: 100px;
+  background: url(../img/mission/bg_arrow.png) no-repeat;
+  background-size: 100%; }
+  #arrow p {
+    font-size: 22px;
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 10px; }
+
+#mission-points {
+  float: right;
+  margin: 0;
+  padding: 0; }
+  #mission-points li {
+    position: relative;
+    display: block;
+    width: 200px;
+    min-height: 100px;
+    margin: 0 0 20px 0;
+    padding-left: 100px;
+    background: url(../img/mission/bg_bullet.png) no-repeat top left;
+    background-size: 30%; }
+    #mission-points li span {
+      position: absolute;
+      top: 20%;
+      left: 35px;
+      font-size: 40px;
+      color: #FFF; }
+    #mission-points li h3 {
+      font-size: 24px;
+      color: #000;
+      text-transform: uppercase;
+      margin: 0; }
+    #mission-points li p {
+      font-size: 12px;
+      margin: 0; }
+
+#worldwide h2 {
+  text-align: center;
+  margin-top: 0px; }
+
+#worldwide img {
+  max-width: 100%;
+  height: auto; }
 
 /* ==========================================================================
    Media Queries
