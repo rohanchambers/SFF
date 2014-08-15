@@ -14,7 +14,7 @@ $(document).ready( function(){
 	   
 	    }, 500, function(){
 		    
-	    	// $('.main-nav li a').fadeIn();
+	    	//$('.main-nav li a').fadeIn();
 	    		    
 	    });
 

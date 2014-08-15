@@ -121,9 +121,9 @@ h1, h2 {
     line-height: 1.2;
 }
 
-p {
+p, li {
     font-family: Verdana, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* Text style */
@@ -186,8 +186,8 @@ footer {
     min-height: 1000px; 
 }
 
-#welcome, #directors, #milesAhead, #mission, #our-products, 
-#wrapper-6, #wrapper-7, #wrapper-8, #wrapper-9, #wrapper-10 {
+#welcome, #directors, #milesAhead, #mission, #regulatory, #our-products, 
+#music-rights, #our-process, #summary, #contact {
     border-bottom: 10px solid $primary-color;
 }
 
@@ -232,6 +232,10 @@ footer {
 
         #intro h1 {
             margin-bottom: 30px;    
+        }
+
+        #intro p {
+            font-size: 13px;
         }
 
         #about-us h2,
@@ -283,7 +287,6 @@ footer {
     }
 
     p {
-        font-size: 11px;
         margin: 0;
     }
 }
@@ -428,7 +431,6 @@ footer {
             }
 
             p {
-                font-size: 12px;
                 margin: 0;
             }
         }    
@@ -454,7 +456,7 @@ footer {
 }
 
     #regulatory .col-1-inner {
-        width: 70%;
+        width: 80%;
         float: right;
     }
 
@@ -556,7 +558,6 @@ footer {
             list-style: none;
             background: url(../img/mission/bg_bullet.png) no-repeat top left;
             background-size: 100%;
-            font-size: 12px;
             font-weight: bold;            
         }
 
@@ -605,13 +606,69 @@ footer {
                 }
 
                 p {
-                    font-size: 12px;
                     width: 82%;
                     margin-left: 8%;
                     margin-right: 8%;                          
                 }            
         }
 }
+
+
+/* Music rights */
+#music-rights {
+    min-height: 1200px;
+}
+
+    #music-rights .col-2 {
+        width: 50%;
+        margin-left: 0;
+        background: url(../img/musicRights/bg_headphones.png) no-repeat top center;
+        background-size: 100%;
+        padding-top: 80px
+    }
+
+    #music-rights h2 {
+        margin: 15px 0;
+    }
+
+    #music-rights h3 {
+        margin: 0;
+    }
+
+    #revenue h2 {
+        text-align: center;
+    }
+
+    #revenue p {
+        width: 40%;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    #revenue p.first {
+        width: 80%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -808,15 +865,22 @@ footer {
 /*
 
 welcome 35 / 35
+padding-top: 60
+
+Directors 47 / 3
+padding-top: 30
 
 miles 47 / 3
+padding-top: 60
 
-mission 50 /45
+mission 50 / 45
+padding-top: 60
 
 regulatory 50 / 50 
+padding-top: 60
 
 our-products 48 / 48
-
+padding-top: 60
 
 
 
