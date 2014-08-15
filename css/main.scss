@@ -117,7 +117,7 @@ h3 {
 }
 
 h1, h2 {
-    margin: 15px 0;
+    margin: 0 0 15px 0;
     line-height: 1.2;
 }
 
@@ -186,9 +186,8 @@ footer {
     min-height: 1000px; 
 }
 
-#welcome, #directors, #milesAhead, #mission, 
-#our-products, #wrapper-6, #wrapper-7, #wrapper-8, 
-#wrapper-9, #wrapper-10 {
+#welcome, #directors, #milesAhead, #mission, #our-products, 
+#wrapper-6, #wrapper-7, #wrapper-8, #wrapper-9, #wrapper-10 {
     border-bottom: 10px solid $primary-color;
 }
 
@@ -221,28 +220,33 @@ footer {
 /* WELCOME SLIDE */
 
 /*Override col widths*/
-#welcome .col-1,
-#welcome .col-2 {
-    width: 35%;
+#welcome {
+    background: url(../img/bg_london.gif) repeat-x bottom center;
+    background-size: 90%;
 }
 
-#about-us h1 {
-    margin-bottom: 70px;    
-}
+    #welcome .col-1,
+    #welcome .col-2 {
+        width: 35%;
+    }
 
-#about-us h2,
-#about-us p {
-    text-align: center;
-}
+        #intro h1 {
+            margin-bottom: 30px;    
+        }
 
-#about-us p {
-    font-size: 16px;
-}
+        #about-us h2,
+        #about-us p {
+            text-align: center;
+        }
+
+        #about-us p {
+            font-size: 16px;
+        }
 
 
 /* DIRECTORS SLIDE */
 #directors .container {
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
     #directors .header-box {
@@ -363,19 +367,20 @@ footer {
 /* Mission and Values */
 #mission .col-1 {
     width: 50%;
-    min-height: 600px;
+    min-height: 920px;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 80px;
     background-color: #e4eaed;        
 }
 
 #mission .col-2 {
     width: 45%;
+    padding-top: 50px;
 }
 
     #arrow {
-        float: left;
-        margin-top: 255px;
+        float: right;
+        margin: 255px 50px 0 0;
         width: 150px;
         height: 100px;
         background: url(../img/mission/bg_arrow.png) no-repeat;
@@ -394,7 +399,7 @@ footer {
     #mission-points {
 
         float: right;
-        margin: 0;
+        margin: 0 50px 0 0;
         padding: 0;
 
         li {
@@ -431,7 +436,6 @@ footer {
 
 #worldwide h2 {
     text-align: center;
-    margin-top: 0px;
 }
 
 #worldwide img {
@@ -444,28 +448,34 @@ footer {
 #regulatory .col-1,
 #regulatory .col-2 {
     width: 50%;
+    min-height: 950px;
     margin: 0;
-    min-height: 600px;
+    padding-top: 50px;
 }
 
-    #regulatory .col-2 { 
-        background-color: #e4eaed;
+    #regulatory .col-1-inner {
+        width: 70%;
+        float: right;
     }
 
-    #regulatory-environment p {
-        font-size: 50px;
-        text-transform: uppercase;
-        line-height: 1.2;
-        margin: 0;
-    }
-
-        #regulatory-environment p span:nth-child(odd) {
-            color: #313133;
+        #regulatory .col-2 { 
+            background-color: #e4eaed;
         }
 
-        #regulatory-environment p span:nth-child(even) {
-            color: $primary-color;
+        #regulatory-environment p {
+            font-size: 50px;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin: 0;
         }
+
+            #regulatory-environment p span:nth-child(odd) {
+                color: #313133;
+            }
+
+            #regulatory-environment p span:nth-child(even) {
+                color: $primary-color;
+            }
 
 #star {
     position: relative;
@@ -492,7 +502,8 @@ footer {
 
     #credentials-list {
         
-        width: 400px;
+        width: 100%;
+        padding: 0;
         
         li {
             display: block;
@@ -788,3 +799,25 @@ footer {
         page-break-after: avoid;
     }
 }
+
+
+
+
+/*Notes*/
+
+/*
+
+welcome 35 / 35
+
+miles 47 / 3
+
+mission 50 /45
+
+regulatory 50 / 50 
+
+our-products 48 / 48
+
+
+
+
+*/
