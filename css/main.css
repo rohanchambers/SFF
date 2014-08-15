@@ -75,7 +75,8 @@ h2, h3,
 #regulatory-environment p,
 #star span,
 #credentials-list li,
-#our-products-copy p {
+#our-products-copy p,
+#summary p.first {
   font-family: 'univers49', serif; }
 
 /* Typgraphy */
@@ -98,6 +99,10 @@ h1, h2 {
 p, li {
   font-family: Verdana, Arial, sans-serif;
   font-size: 12px; }
+
+a {
+  color: #FFF;
+  text-decoration: none; }
 
 /* Text style */
 .primary-color {
@@ -493,6 +498,87 @@ footer {
 
 #revenue p.first {
   width: 80%; }
+
+/* Our Process (image only) */
+#our-process img {
+  max-width: 100%;
+  height: auto; }
+
+/* Summary */
+#summary h2 {
+  text-align: center; }
+#summary p.first {
+  width: 75%;
+  margin: 15px auto 40px auto;
+  font-size: 25px;
+  text-align: center; }
+
+#fund-facts {
+  text-align: center; }
+  #fund-facts span {
+    color: #7e929b;
+    font-weight: bold; }
+
+#quote {
+  width: 85%;
+  margin: 50px auto 0 auto; }
+  #quote span {
+    display: block;
+    line-height: normal;
+    text-align: left; }
+  #quote #strong {
+    font-size: 75px; }
+  #quote #reliable {
+    font-size: 28px;
+    color: black !important;
+    margin-bottom: 0; }
+  #quote #serious {
+    font-size: 16px; }
+
+/* Contact us */
+#contact h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+  padding: 20px 0;
+  background: #7e929b; }
+#contact #map {
+  position: relative;
+  width: 100%;
+  margin: 10px 0; }
+  #contact #map img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    z-index: 0; }
+  #contact #map #map-pointer {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    z-index: 10;
+    margin-left: -75px;
+    width: 157px;
+    height: 225px;
+    background: url(../img/contact/bg_map_pointer.png) no-repeat; }
+#contact #contact-info {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 75px 0;
+  color: #FFF;
+  text-align: center;
+  background-color: #7e929b; }
+  #contact #contact-info span {
+    color: #000; }
+  #contact #contact-info #credits {
+    width: 100%;
+    position: absolute;
+    bottom: 20px; }
+    #contact #contact-info #credits p {
+      font-size: 10px;
+      text-align: center;
+      margin: 0; }
 
 /* ==========================================================================
    Media Queries
