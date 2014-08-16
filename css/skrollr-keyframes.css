@@ -1,21 +1,103 @@
-#foo {
-    -skrollr-animation-name:animation1;
+#introduction {
+    -skrollr-animation-name:introduction;
 }
 
-@-skrollr-keyframes animation1 {
+@-skrollr-keyframes introduction {
     0 {
-        left:100%;
+        background-position:0 0px;
+    }
+
+    500 {
+        background-position:0 -50px;
+    }
+}
+
+#logo {
+    -skrollr-animation-name:logo;
+}
+
+@-skrollr-keyframes logo {
+    0 {
+        top:15%;
     }
 
     2000 {
-        left:0%;
-    }
-
-    top {
-        color:rgb(0,0,0);
-    }
-
-    bottom {
-        color:rgb(255,0,0);
+        top:-20%;
     }
 }
+
+#joy {
+    -skrollr-animation-name:joy;
+}
+
+@-skrollr-keyframes joy {
+    0 {
+        top:40%;
+    }
+
+    1000 {
+        top:-20%;
+    }
+}
+
+#circle-top {
+    -skrollr-animation-name:circle-top;
+}
+
+@-skrollr-keyframes circle-top {
+    0 {
+        top:28%;
+    }
+
+    700 {
+        top:-20%;
+    }
+}
+
+#circle-bottom {
+    -skrollr-animation-name:circle-bottom;
+}
+
+@-skrollr-keyframes circle-bottom {
+    0 {
+        top:38%;
+    }
+
+    100 {
+        top:38%
+    }
+
+    450 {
+        top:-20%;
+    }
+}
+
+#circle-small {
+    -skrollr-animation-name:circle-small;
+}
+
+@-skrollr-keyframes circle-small {
+    0 {
+        top:35%;
+    }
+
+    110 {
+        top: 35%;
+    }
+
+    400 {
+        top:-20%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

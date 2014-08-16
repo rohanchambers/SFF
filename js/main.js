@@ -1,4 +1,13 @@
 $(document).ready( function(){
+	// Initialise Skrollr
+ 	var s = skrollr.init({
+ 		forceHeight: false,
+	    render: function(data) {
+	        //Log the current scroll position.
+	        console.log(data.curTop);
+	    }
+ 	});	
+	
 	//Animate scroll
 	var nav = $('.main-nav li a');
 
@@ -12,7 +21,7 @@ $(document).ready( function(){
 	   
 	        scrollTop: $($anchor.attr('href')).offset().top
 	   
-	    }, 500, function(){
+	    }, 1500, function(){
 		    
 	    	//$('.main-nav li a').fadeIn();
 	    		    
@@ -21,4 +30,6 @@ $(document).ready( function(){
 	    event.preventDefault();
 
 	});
+
+	// Fade IN/OUT Intro Elements
 });

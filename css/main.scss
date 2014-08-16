@@ -97,7 +97,8 @@ h2, h3,
 #star span,
 #credentials-list li,
 #our-products-copy p,
-#summary p.first {
+#summary p.first,
+#joy {
     font-family: 'univers49', serif;
 }
 
@@ -130,6 +131,10 @@ p, li {
 a {
     color: #FFF;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Text style */
@@ -177,7 +182,7 @@ footer {
             }
             
             a {
-                font-size: 13px;
+                font-size: 12px;
                 color: #FFF;
                 text-decoration: none;
                 line-height: 30px;
@@ -192,9 +197,10 @@ footer {
     min-height: 1000px; 
 }
 
-#welcome, #directors, #milesAhead, #mission, #regulatory, #our-products, 
-#music-rights, #our-process, #summary, #contact {
-    border-bottom: 10px solid $primary-color;
+#introduction, #welcome, #directors, #milesAhead, #mission, 
+#regulatory, #our-products, #music-rights, #our-process, 
+#summary, #contact {
+    border-top: 10px solid $primary-color;
 }
 
 .container {
@@ -202,7 +208,6 @@ footer {
     height: auto;
     margin: 0 auto;
     padding-top: 60px;
-    background: #FFF; 
 }
 
     .content {  
@@ -223,17 +228,112 @@ footer {
         }
 
 
-/* WELCOME SLIDE */
+/* INTRO SLIDE */
+#introduction {
+    background: $primary-color url(../img/intro/bg_intro.gif) no-repeat fixed;
+    background-position: 0 0;
+    background-size: cover;
 
-/*Override col widths*/
-#welcome {
-    background: url(../img/bg_london.gif) repeat-x bottom center;
-    background-size: 90%;
+    .container {
+        position: relative;
+        height: 1000px;
+        min-height: 100%;
+    }
 }
 
+    @mixin border-radius($radius) {
+      -webkit-border-radius: $radius;
+         -moz-border-radius: $radius;
+          -ms-border-radius: $radius;
+              border-radius: $radius;
+    }
+ 
+    #logo {
+        position: absolute;
+        top: 15%;
+        left: 16%;
+        width: 165px;
+        height: 165px;
+        border: 20px solid $primary-color;
+        @include border-radius(165px);        
+        background: #FFF url(../img/intro/logo_SFF.png) no-repeat 10px 33px;
+        background-size: 98%; 
+    }
+
+    #joy {
+        position: absolute;
+        top: 40%;
+        left: 16%;
+        width: 205px;
+        height: 205px;
+        font-size: 20px;
+        line-height: 205px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFF;
+        @include border-radius(173px);        
+        background: $primary-color;
+    }
+
+    #circle-top {
+        position: absolute;
+        top: 28%;
+        left: 0%;        
+        width: 60px;
+        height: 60px;
+        @include border-radius(60px);
+        background: $primary-color;
+    }
+
+    #circle-bottom {
+        position: absolute;
+        top: 38%;
+        left: 0%;        
+        width: 60px;
+        height: 60px;
+        @include border-radius(60px);
+        background: $primary-color;
+    }   
+    
+    #circle-small {
+        position: absolute;
+        top: 35%;
+        left: 10%;        
+        width: 30px;
+        height: 30px;
+        @include border-radius(30px);
+        background: $primary-color;
+    } 
+
+
+
+
+/* WELCOME SLIDE */
+#welcome {
+    height: 1000px;    
+    min-height: 100%;
+    background: transparent;
+}
+    
+    #london-landscape {
+        position: relative;
+        z-index: 100;
+        height: 1000px;    
+        min-height: 100%;        
+        background: transparent url(../img/bg_london.png) repeat-x bottom center fixed;
+        background-size: 90%;
+    }
+
+    #welcome .container {
+        position: relative;
+        padding: 0;
+    }
+    
+    /*Override col widths*/
     #welcome .col-1,
     #welcome .col-2 {
         width: 35%;
+        padding-top: 60px;
     }
 
         #intro h1 {
@@ -298,15 +398,15 @@ footer {
 }
 
 
-/*MILES AHEAD*/
+/* MILES AHEAD SLIDE */
 #milesAhead {
     
     .content {
-        min-height: 750px;
-        overflow: hidden;
 
         .col-1, .col-2 {
             position: relative;
+            min-height: 940px;
+
         }
     }
 
@@ -373,7 +473,7 @@ footer {
 }
 
 
-/* Mission and Values */
+/* MMISSION AND VALUES SLIDE */
 #mission .col-1 {
     width: 50%;
     min-height: 920px;
@@ -452,7 +552,7 @@ footer {
 }
 
 
-/* Regualatory Environment */ 
+/* REGULATORY ENVIRONMENT */ 
 #regulatory .col-1,
 #regulatory .col-2 {
     width: 50%;
@@ -620,7 +720,7 @@ footer {
 }
 
 
-/* Music rights */
+/* MUSIC RIGHTS SLIDE */
 #music-rights {
     min-height: 1200px;
 }
@@ -656,14 +756,14 @@ footer {
     }
 
 
-/* Our Process (image only) */
+/* OUR PROCESS (image only) */
 #our-process img {
     max-width: 100%;
     height: auto;
 }   
 
 
-/* Summary */
+/* SUMMARY */
 #summary {
     h2 {
         text-align: center;
@@ -712,22 +812,23 @@ footer {
     }
 
 
-/* Contact us */
-
+/* CONTACT US */
 #contact { 
     h2 {
         font-size: 50px;
         text-align: center;
         color: #FFF;
         margin: 0;
-        padding: 20px 0;
+        padding: 40px 0 10px 0;
         background: $primary-color;
     }
 
     #map {
         position: relative;
         width: 100%;
+        height: 324px;
         margin: 10px 0;
+        background: url(../img/contact/bg_map.jpg) no-repeat center center;
 
         img {
             position: relative;
