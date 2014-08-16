@@ -94,9 +94,171 @@
 
 
 
+#text-be {
+    -skrollr-animation-name:text-be;
+}
 
+@-skrollr-keyframes text-be {
+    0 {
+        top:7%;
+    }
 
+    2475  {
+        top: 40%;
+    }
 
+    3090 {
+        top: 7%;
+    }
+
+    3500 {
+        top: 7%;
+    }
+
+    3875 {
+        top: -20%;
+    }
+}
+
+#text-miles {
+    -skrollr-animation-name:text-miles;
+}
+
+@-skrollr-keyframes text-miles {
+    0 {
+        top:21%;
+    }
+
+    2600  {
+        top: 80%;
+    }
+
+    3090 {
+        top:22%;
+    }
+
+    3475 {
+        top:-20%;
+    }
+}
+
+#text-ahead {
+    -skrollr-animation-name:text-ahead;
+}
+
+@-skrollr-keyframes text-ahead {
+    0 {
+        top:22%;
+    }
+
+    2800  {
+        top: 80%;
+    }
+
+    3090 {
+        top:22%;
+    }
+
+    3900 {
+        top:-20%;
+    }
+}
+
+#text-traditional {
+    -skrollr-animation-name:text-traditional;
+}
+
+@-skrollr-keyframes text-traditional {
+    0 {
+        top:100%;
+    }
+
+    2600  {
+        top:200%;
+    }
+
+    3090 {
+        top:41%;
+    }
+
+    3200 {
+        top:41%;
+    }
+
+    3700 {
+        top:0%;
+    }
+}
+
+#text-investors {
+    -skrollr-animation-name:text-investors;
+}
+
+@-skrollr-keyframes text-investors {
+    0 {
+        top:100%;
+    }
+
+    2600  {
+        top:300%;
+    }
+
+    3090 {
+        top:47%;
+    }
+
+    3300 {
+        top:47%;
+    }    
+
+    3550 {
+        top:0%;
+    }
+}
+
+#person {
+    -skrollr-animation-name:person;
+}
+
+@-skrollr-keyframes person {
+    0 {
+        top:100%;
+    }
+
+    2600  {
+        top:300%;
+    }
+
+    3090 {
+        top:47%;
+    }
+
+    3900 {
+        top:-20%;
+    }
+}
+
+#group-persons {
+    -skrollr-animation-name:group-persons;
+}
+
+@-skrollr-keyframes group-persons {
+    0 {
+        top:0%;
+    }
+
+    2150  {
+        top: 20%;
+    }
+
+    3090 {
+        top:0%;
+    }
+
+    3475 {
+        top:0%;
+    }
+}
 
 
 

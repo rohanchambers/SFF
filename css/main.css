@@ -333,42 +333,42 @@ footer {
   line-height: normal; }
 #milesAhead #text-be {
   position: absolute;
-  top: 60px;
+  top: 7%;
   font-size: 750px;
   color: #7e929b; }
 #milesAhead #text-miles {
   position: absolute;
-  top: 200px;
-  left: 0px;
+  top: 21%;
+  left: 0;
   font-size: 63px;
   color: #7e929b; }
 #milesAhead #text-ahead {
   position: absolute;
-  top: 200px;
+  top: 21%;
   right: 0;
   font-size: 220px; }
-#milesAhead #text-investors {
-  position: absolute;
-  top: 440px;
-  right: 0;
-  font-size: 83px;
-  color: #000; }
 #milesAhead #text-traditional {
   position: absolute;
-  top: 380px;
+  top: 41%;
   right: 0;
   font-size: 56px;
   color: #7e929b; }
+#milesAhead #text-investors {
+  position: absolute;
+  top: 47%;
+  right: 0;
+  font-size: 83px;
+  color: #000; }
 #milesAhead #group-persons {
   position: absolute;
-  top: 0;
-  right: 30px;
+  top: 0%;
+  right: 7%;
   width: 219px;
   height: 130px;
   background: url(../img/milesAhead/milesAhead_group.jpg) no-repeat; }
 #milesAhead #person {
   position: absolute;
-  top: 400px;
+  top: 43%;
   left: 0;
   width: 114px;
   height: 350px;
