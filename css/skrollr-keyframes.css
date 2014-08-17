@@ -81,15 +81,14 @@
         top:35%;
     }
 
-    75 {
+    500 {
         top: 35%;
     }
 
-    400 {
+    500 {
         top:-20%;
     }
 }
-
 
 
 
@@ -263,3 +262,62 @@
 
 
 
+#headphones {
+    -skrollr-animation-name:headphones;
+}
+
+@-skrollr-keyframes headphones {
+    5300 {
+        top:-60%;
+    }
+
+    6400 {
+        top: 100%;
+    }
+
+    7130 {
+        top: 0%;
+    }
+}
+
+#headphones-copy {
+    -skrollr-animation-name:headphones-copy;
+}
+
+@-skrollr-keyframes headphones-copy {
+    0 {
+        top:0%;
+    }
+
+    6800 {
+        top: 100%;
+    }
+
+    7130 {
+        top: 10%;
+    }
+}
+
+
+
+
+#circle {
+    -skrollr-animation-name:circle;
+}
+
+@-skrollr-keyframes circle {
+    5300 {
+        top:-60%;
+        transform: rotate(130deg);
+            -ms-transform: rotate(130deg);
+                -webkit-transform: rotate(130deg);      
+    }
+
+    6120 {
+        top: 6%;
+        transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);   
+    }
+
+}

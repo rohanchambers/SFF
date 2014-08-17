@@ -625,12 +625,17 @@ footer {
 
 
 /* Mission and Values */
+#our-products .container {
+    padding-top: 0;
+}
+
 #our-products .col-1,
 #our-products .col-2 {
     width: 48%;
     min-height: 760px;
     margin: 0;   
-    padding-bottom: 20px;   
+    padding: 60px 0 20px 0;
+    overflow: hidden;   
 }
 
     #our-products-copy {
@@ -686,11 +691,17 @@ footer {
     position: relative;
 
         #circle {
-            position: relative;
+            position: absolute;
+            top: 6%;
+            left: 7%;
             z-index: 1;
             width: 400px;
             height: 400px;
             margin: 0 auto;
+            transform: rotate(0deg);
+                -ms-transform: rotate(0deg); /* IE 9 */
+                    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+
             background: url(../img/products/bg_SFF_circle.png) no-repeat; 
         }
 
@@ -725,10 +736,10 @@ footer {
 }
 
     #music-rights .col-2 {
+        position: relative;
         width: 50%;
+        min-height: 800px;
         margin-left: 0;
-        background: url(../img/musicRights/bg_headphones.png) no-repeat top center;
-        background-size: 100%;
         padding-top: 80px
     }
 
@@ -754,6 +765,19 @@ footer {
         width: 80%;
     }
 
+    #headphones {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 495px;
+        height: 859px;
+        background: url(../img/musicRights/bg_headphones.png) no-repeat top center;
+    }
+
+    #headphones-copy {
+        position: absolute;
+        top: 100%;
+    }
 
 /* OUR PROCESS (image only) */
 #our-process img {
@@ -851,7 +875,7 @@ footer {
     #contact-info {
         position: relative;
         width: 100%;
-        height: auto;
+        min-height: 366px;
         padding: 75px 0;
         color: #FFF;
         text-align: center;
