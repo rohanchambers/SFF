@@ -935,7 +935,7 @@ footer {
 @media (max-width: 975px) {
     /* Simplify the basic layout */
     .container {
-        background: purple;
+        /*background: purple;*/
         margin: 0 2%;
         width: auto;
     }   
@@ -1103,10 +1103,43 @@ footer {
         padding-top: 30px!important;
     }   
 
+    #directors .col-1,
+    #directors .col-2 {
+        padding-top: 0px!important;
+    }
+
     #about-us h2, #about-us p {
         text-align: left;
     }
+
+    #mission-points {
+        margin: 0 2%;
+
+        li {
+            width: auto;
+            background-size: 25%;
+        }
+    }
+
+    #star {
+        width: 100%;
+    }
     
+    #quote {
+        margin-top: 0;
+
+        #strong {
+            font-size: 65px;
+        }
+    }
+
+    #headphones-copy {
+        margin-top: 45px;
+
+            h2 {
+                font-size: 25px;
+            }
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
