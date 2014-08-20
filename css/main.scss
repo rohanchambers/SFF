@@ -194,7 +194,8 @@ footer {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 1000px; 
+    min-height: 1000px;
+    @extend .clearfix;
 }
 
 #introduction, #welcome, #directors, #milesAhead, #mission, 
@@ -305,7 +306,16 @@ footer {
         background: $primary-color;
     } 
 
-
+    #scroll-down {
+        display: block;
+        margin: 35px 0 0 0;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 12px;              
+        line-height: 1.1;
+        text-align: center;
+        text-transform: none;
+        color: #000;
+    }
 
 
 /* WELCOME SLIDE */
@@ -493,6 +503,7 @@ footer {
         height: 100px;
         background: url(../img/mission/bg_arrow.png) no-repeat;
         background-size: 100%;
+        display: none;
 
         p {
             font-size: 22px;
@@ -591,6 +602,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     background: url(../img/regulatory/bg_star.png) no-repeat top center; 
+    background-size: 100%;
 
         span {
             display: block;
@@ -769,14 +781,15 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        width: 495px;
+        width: 100%;
         height: 859px;
         background: url(../img/musicRights/bg_headphones.png) no-repeat top center;
+        background-size: 100%;
     }
 
     #headphones-copy {
         position: absolute;
-        top: 100%;
+        top: 13%;
     }
 
 /* OUR PROCESS (image only) */
@@ -919,35 +932,183 @@ footer {
 /* =Responsive Structure
 ----------------------------------------------- */
 
-@media (max-width: 960px) {
+@media (max-width: 975px) {
     /* Simplify the basic layout */
     .container {
         background: purple;
-        margin: 0 7.6%;
-        width: auto;        
+        margin: 0 2%;
+        width: auto;
     }   
 
+        #welcome .col-1 {
+            float: left;
+            width: 47%;
+            margin-right: 3%;
+        }
+
+        #welcome .col-2 {
+            float: right;
+            width: 47%;
+            margin-left: 3%;
+        }
+
+        #scenario #circle {
+            width: 94%;
+            height: 415px;
+            background-size: 100%;
+        }
+
+        #milesAhead #text-be {
+            font-size: 550px!important;
+        }
+
+        #milesAhead #text-miles {
+            left: -23%;
+        }
+
+        #scenario #scenario-copy {
+            bottom: -10px;
+        }
 }
+
+@media (max-width: 812px) {
+    #star {
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
-    /* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */ 
-    body, input, textarea {
-        font-size: 13px;
+
+    #milesAhead {
+        display: none;
+    }
+
+    .wrapper {
+        /*position: relative;*/
     }
     .container {
-        background: blue;
+        /*background: blue;*/
         margin: 0 7.6%;
-        width: auto;    
-    }   
+        padding-top: 0!important;
+        width: auto;
+    }
+
+    .profile img {
+        float: none;
+    }
+
+    #mission .col-1, 
+    #mission .col-2,
+    #regulatory .col-1, 
+    #regulatory .col-2,
+    #our-products .col-1, 
+    #our-products .col-2,
+    #music-rights .col-1, 
+    #music-rights .col-2,    
+    #summary .col-1, 
+    #summary .col-2 {
+        float: none!important;
+        width: auto!important;
+        margin: 0!important;
+        padding: 30px 0;
+        height: auto;
+        min-height: 100%;                       
+    }
+
+    #introduction {
+        /*background: none;*/
+    }
+
+        #mission-points {
+            float: none;
+
+                li {
+                    width: 300px;
+                    margin: 0 auto;
+                    background-size: 20%;
+                }
+        }
+
+        #worldwide img {
+            display: block;
+            margin: 0 auto 0 auto;
+        }
+
+        #regulatory .col-1-inner {
+            float: none;
+            margin: 0 auto;
+        }
+
+        #scenario #scenario-copy {
+            position: relative!important;
+            padding: 30px 0;
+        }
+
+        #scenario #circle {
+            left: 50%;
+            margin-left: -200px;
+            display: none;
+        }
+
+        #what-we-offer h2 {
+            text-align: left;
+        }
+
+        #quote span {
+            text-align: center;
+        }
+
+        #music-rights {
+            overflow: hidden;
+        }
+
+            #headphones {
+                background-size: 100%;
+            }
+
+            #headphones-copy {
+                position: relative;
+                margin-top: 100px;
+            }
+
+        #scenario #circle {
+            width: 63%;
+        }        
+
+        #our-process {
+            min-height: 0;
+            .container {
+                padding: 30px 0 !important
+            }
+        }
+
+        #star {
+            width: 399px;
+        }
 }
 
 @media (max-width: 480px) {
     .container {
         background: green;
         margin: 0 2%;
+        padding-top: 0px;
         width: auto;    
+    }
+
+    .col-1, 
+    .col-2 {
+        float: none!important;
+        width: auto!important;
+        margin: 0!important;
+        padding-top: 30px!important;
     }   
+
+    #about-us h2, #about-us p {
+        text-align: left;
+    }
     
 }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .container {
         background: yellow;

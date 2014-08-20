@@ -1,34 +1,30 @@
 $(document).ready( function(){
-	// Initialise Skrollr
- 	var s = skrollr.init({
- 		forceHeight: false,
-	    render: function(data) {
-	        //Log the current scroll position.
-	        console.log(data.curTop);
-	    }
- 	});	
-	
-	//Animate scroll
-	var nav = $('.main-nav li a');
+	// Initialize skrollr if the window width is higher than 768px wide
+	if ($(window).width() > 768) {
+		skrollr.init({
+			forceHeight: false
+		});
+	}
+
+	// Disable skrollr if the window is resized below 768px wide
+	$(window).on('resize', function () {
+		if ($(window).width() <= 768) {
+			skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+		}
+	});
+
+	//Animate scroll to sections
+	var nav = $('.main-nav li a, #scroll-down');
 
 	$(nav).bind('click',function(event){
-		
-		//nav.hide();
-	    
+		//nav.hide();	    
 	    var $anchor = $(this);
-	    
-	    $('html, body').stop().animate({
-	   
+	    $('html, body').stop().animate({	   
 	        scrollTop: $($anchor.attr('href')).offset().top
-	   
-	    }, 1500, function(){
-		    
+	    }, 1500, function(){		    
 	    	//$('.main-nav li a').fadeIn();
-	    		    
 	    });
-
 	    event.preventDefault();
-
 	});
 
 	// Fade IN/OUT Intro Elements
