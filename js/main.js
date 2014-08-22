@@ -1,6 +1,13 @@
 $(document).ready( function(){
+
+	// if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+	//     skrollr.init({
+	//         skrollr.destroy();
+	//     });
+	// }
+
 	// Initialize skrollr if the window width is higher than 768px wide
-	if ($(window).width() > 768) {
+	if ($(window).width() > 812) {
 		skrollr.init({
 			forceHeight: false
 		});
@@ -8,7 +15,7 @@ $(document).ready( function(){
 
 	// Disable skrollr if the window is resized below 768px wide
 	$(window).on('resize', function () {
-		if ($(window).width() <= 768) {
+		if ($(window).width() <= 812) {
 			skrollr.init().destroy(); // skrollr.init() returns the singleton created above
 		}
 	});

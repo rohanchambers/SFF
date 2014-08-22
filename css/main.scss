@@ -1015,10 +1015,6 @@ footer {
         min-height: 100%;                       
     }
 
-    #introduction {
-        /*background: none;*/
-    }
-
         #mission-points {
             float: none;
 
@@ -1089,7 +1085,7 @@ footer {
 
 @media (max-width: 480px) {
     .container {
-        background: green;
+        /*background: green;*/
         margin: 0 2%;
         padding-top: 0px;
         width: auto;    
@@ -1117,12 +1113,17 @@ footer {
 
         li {
             width: auto;
-            background-size: 25%;
         }
     }
 
     #star {
-        width: 100%;
+        width: 80%;
+        height: 300px;
+
+         span {
+            font-size: 32px;
+            left: 18%;
+         }
     }
     
     #quote {
@@ -1140,17 +1141,152 @@ footer {
                 font-size: 25px;
             }
     }
+
+    #revenue p {
+        width: 80%;
+    }
+
+    #scroll-down {
+       color: #FFF;
+    }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media (max-width: 320px) {
     .container {
-        background: yellow;
-        margin: 0 2%;
+        /*background: yellow;
+*/        margin: 0 2%;
         width: auto;    
     }   
+
+    #mission-points li {
+        background-size: 27%;
+    }
     
+    #star {
+        width: 95%;
+    }
+
+    #credentials-list {
+        width: auto;
+        margin: 0 2%;
+    }   
+
+    #what-we-offer ul li {
+        width: auto;
+        margin: 0 2% 15px 2%;
+        background-size: 25%;
+        padding-top: 100px;
+    }
+
+    #what-we-offer ul span {
+        top: 20px;
+        left: 10%;
+    }    
+
+    #our-products-copy {
+        padding: 0;
+        background: none;
+    }
+
+    #regulatory-environment p {
+        font-size: 30px;
+    }
 }
-        
+
+@media (max-width: 480px) and (orientation:portrait) {
+    /* Style adjustments for portrait mode goes here */
+    #introduction {
+        background: #8ea4af;
+        min-height: 0;
+
+            .container {
+                height: 500px;
+            }
+
+            #logo {
+                top: 10%;  
+                left: 3%;
+            }
+
+            #circle-top {
+                left: auto;
+                right: 10%;
+                top: 12%;
+            }
+
+            #circle-small {
+                left: auto;
+                right: 5%;
+                top: 25%;
+            }
+
+            #circle-bottom {
+                left: auto;
+                right: 10%;
+                top: 39%;
+            }
+
+            #joy  {
+                width: auto;
+                height: auto;
+                top: 44%;
+                background: transparent;
+                border-radius: 0;
+                line-height: normal;
+                color: transparent;
+            }        
+    }
+
+}
+ 
+@media (max-width: 1024px) and (orientation:landscape) {
+    /* Style adjustments for landscape mode goes here */
+    #introduction {
+        background: #8ea4af;
+        min-height: 0;
+
+            .container {
+                height: 500px;
+            }
+
+            #logo {
+                top: 7%;  
+                left: 3%;
+            }
+
+            #circle-top {
+                left: auto;
+                right: 10%;
+                top: 10%;
+            }
+
+            #circle-small {
+                left: auto;
+                right: 5%;
+                top: 20%;
+            }
+
+            #circle-bottom {
+                left: auto;
+                right: 10%;
+                top: 30%;
+            }
+
+            #joy  {
+                width: auto;
+                height: auto;
+                top: 41%;
+                background: transparent;
+                border-radius: 0;
+                line-height: normal;
+                color: transparent;
+            } 
+
+            #scroll-down {
+               color: #FFF;
+            }                   
+    }
+}        
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
