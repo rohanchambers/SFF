@@ -35,7 +35,7 @@ $(document).ready( function(){
 
 	// $('.main-nav a').click( function(){
 	// 	$('.main-nav').slideToggle();
-	// });	
+	// });
 
 	// Add/Remove Class of active to highlight mobile nav
 	$('.main-nav a').click( function(){
