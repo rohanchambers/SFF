@@ -1,0 +1,94 @@
+@media (max-width: 480px) and (orientation:portrait) {
+    /* Style adjustments for portrait mode goes here */
+    #introduction {
+        background: #8ea4af;
+        min-height: 0;
+
+            .container {
+                height: 500px;
+            }
+
+            #logo {
+                top: 10%;  
+                left: 3%;
+            }
+
+            #circle-top {
+                left: auto;
+                right: 10%;
+                top: 12%;
+            }
+
+            #circle-small {
+                left: auto;
+                right: 5%;
+                top: 25%;
+            }
+
+            #circle-bottom {
+                left: auto;
+                right: 10%;
+                top: 39%;
+            }
+
+            #joy  {
+                width: auto;
+                height: auto;
+                top: 44%;
+                background: transparent;
+                border-radius: 0;
+                line-height: normal;
+                color: transparent;
+            }        
+    }
+
+}
+ 
+@media (max-width: 1024px) and (orientation:landscape) {
+    /* Style adjustments for landscape mode goes here */
+    #introduction {
+        background: #8ea4af;
+        min-height: 0;
+
+            .container {
+                height: 500px;
+            }
+
+            #logo {
+                top: 7%;  
+                left: 3%;
+            }
+
+            #circle-top {
+                left: auto;
+                right: 10%;
+                top: 10%;
+            }
+
+            #circle-small {
+                left: auto;
+                right: 5%;
+                top: 20%;
+            }
+
+            #circle-bottom {
+                left: auto;
+                right: 10%;
+                top: 30%;
+            }
+
+            #joy  {
+                width: auto;
+                height: auto;
+                top: 41%;
+                background: transparent;
+                border-radius: 0;
+                line-height: normal;
+                color: transparent;
+            } 
+
+            #scroll-down {
+               color: #FFF;
+            }                   
+    }
+}        

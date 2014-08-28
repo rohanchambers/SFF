@@ -1,11 +1,5 @@
 $(document).ready( function(){
 
-	// if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-	//     skrollr.init({
-	//         skrollr.destroy();
-	//     });
-	// }
-
 	// Initialize skrollr if the window width is higher than 768px wide
 	if ($(window).width() > 812) {
 		skrollr.init({
@@ -34,5 +28,19 @@ $(document).ready( function(){
 	    event.preventDefault();
 	});
 
-	// Fade IN/OUT Intro Elements
+	// Mobile hamburger menu show/hide
+	$('#hamburger a').click( function(){
+		$('.main-nav').slideToggle();
+	});	
+
+	// $('.main-nav a').click( function(){
+	// 	$('.main-nav').slideToggle();
+	// });	
+
+	// Add/Remove Class of active to highlight mobile nav
+	$('.main-nav a').click( function(){
+		$('.main-nav a').removeClass('active');
+		$(this).addClass('active');
+	});
+
 });

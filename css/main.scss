@@ -86,7 +86,8 @@ $primary-color: #7E929B;
 h1, 
 #about-us p,
 #mission-points li span,
-#what-we-offer li span {
+#what-we-offer li span,
+#mobile-logo {
      font-family: 'trajanPro', serif; 
 }
 
@@ -98,7 +99,8 @@ h2, h3,
 #credentials-list li,
 #our-products-copy p,
 #summary p.first,
-#joy {
+#joy,
+.main-nav a {
     font-family: 'univers49', serif;
 }
 
@@ -146,6 +148,9 @@ a:hover {
     font-style: italic;
 }
 
+#mobile-logo {
+    display: none;
+}
 
 /* NAV */
 header, 
@@ -153,16 +158,31 @@ footer {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    min-height: 30px;           
+    min-height: 35px;           
     background: $primary-color;    
 }
     
     footer {
-        bottom: 0;    
+        bottom: 0; 
+        min-height: 25px;
+
+        .main-nav {
+            min-height: 25px;
+
+            li {
+                min-height: 25px;
+
+                    a {
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+            }
+        }
     }
 
     .main-nav {
-        min-height: 30px;
+        position: relative;
+        min-height: 35px;
         z-index: 1000;
         margin: 0 auto;
         width: 960px;
@@ -177,15 +197,24 @@ footer {
                 display: block;
                 float: left;
                 width: auto;
-                margin-right: 10px; 
-                min-height: 30px;
+                margin: 0 10px; 
+                min-height: 35px;
+            }
+
+            #nav-item-one {
+                margin-left: 0;
             }
             
             a {
-                font-size: 12px;
+                font-size: 20px;
                 color: #FFF;
                 text-decoration: none;
-                line-height: 30px;
+                line-height: 38px;
+                text-transform: uppercase;
+            }
+
+            a:hover {
+                color: #e4eaed;
             }
     }
 
@@ -933,6 +962,62 @@ footer {
 ----------------------------------------------- */
 
 @media (max-width: 975px) {
+
+    #mobile-logo {
+        display: block;
+        width: auto;
+        min-height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        background-size: 100%;
+        color: #FFF;
+    }
+
+    #hamburger {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background: url(../img/mobile/hamburger.png) no-repeat;
+        background-size: 100%;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+    }
+
+    header {
+        .main-nav {
+            display: none;
+            width: 100%;
+            margin: 0;
+            border-bottom: 5px solid #FFF;
+
+            li {
+                float: none;
+                width: 100%;
+                margin: 0;
+                border-bottom: 1px solid #e4eaed;
+            }
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 20px;
+                    display: block;
+                }
+
+                a:hover, .active {
+                    background: #e4eaed;
+                    color: #000;
+                }
+        }
+    }
+
+
     /* Simplify the basic layout */
     .container {
         /*background: purple;*/
@@ -971,6 +1056,7 @@ footer {
         }
 }
 
+/* Small fix for star at 812px This is whens*/
 @media (max-width: 812px) {
     #star {
         width: 100%;
