@@ -56,13 +56,18 @@ textarea {
     padding: 0.2em 0;
 }
 
+.bold {
+    font-weight: bold;
+}
 
 /* ==========================================================================
    Custom styles
    ========================================================================== */
 
 /* SASS Variables */
-$primary-color: #7E929B;
+$primary-color: #8ea4af;
+//8ea4af
+
 
 /* Specialised fonts */
 @font-face {
@@ -100,7 +105,8 @@ h2, h3,
 #our-products-copy p,
 #summary p.first,
 #joy,
-.main-nav a {
+.main-nav a,
+#forecasting {
     font-family: 'univers49', serif;
 }
 
@@ -161,7 +167,7 @@ footer {
     min-height: 35px;           
     background: $primary-color;    
 }
-    
+
     footer {
         bottom: 0; 
         min-height: 25px;
@@ -423,7 +429,7 @@ footer {
     img {
         float: left;
         width: 150px;
-        margin: 0 15px 15px 0;
+        margin: 0 15px 20px 0;
         border: 15px solid $primary-color;
     }
 
@@ -821,6 +827,13 @@ footer {
         top: 13%;
     }
 
+    #forecasting {
+        text-align: center;
+        font-size: 30px;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
 /* OUR PROCESS (image only) */
 #our-process img {
     max-width: 100%;
@@ -925,6 +938,11 @@ footer {
         
         span {
             color: #000;
+        }
+
+        .website {
+            margin: 30px 0;
+            font-weight: bold;
         }
 
         #credits {
@@ -1064,7 +1082,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-
+/*    .container {
+        background: blue;
+    }*/
     #milesAhead {
         display: none;
     }
@@ -1325,54 +1345,8 @@ footer {
 
 }
  
-@media (max-width: 1024px) and (orientation:landscape) {
-    /* Style adjustments for landscape mode goes here */
-    #introduction {
-        background: #8ea4af;
-        min-height: 0;
+    
 
-            .container {
-                height: 500px;
-            }
-
-            #logo {
-                top: 7%;  
-                left: 3%;
-            }
-
-            #circle-top {
-                left: auto;
-                right: 10%;
-                top: 10%;
-            }
-
-            #circle-small {
-                left: auto;
-                right: 5%;
-                top: 20%;
-            }
-
-            #circle-bottom {
-                left: auto;
-                right: 10%;
-                top: 30%;
-            }
-
-            #joy  {
-                width: auto;
-                height: auto;
-                top: 41%;
-                background: transparent;
-                border-radius: 0;
-                line-height: normal;
-                color: transparent;
-            } 
-
-            #scroll-down {
-               color: #FFF;
-            }                   
-    }
-}        
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

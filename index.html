@@ -17,7 +17,7 @@
     
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body id="skrollr-body">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -37,7 +37,6 @@
                 <li><a href="#summary">Summary</a></li> 
                 <li><a href="#contact">Contact us</a></li>                                    
             </ul>
-
         </nav>
         <div id="hamburger">
             <a href="#"></a>
@@ -262,9 +261,7 @@
 
                             <li><span>2</span>An Offshore Film Fund for non-UK investors, or any investors looking for a tax free environment</li>
 
-                            <li><span>3</span>Any Investors personally interested in investing directly in a specific film project</li>
-
-                            <li class="last"><span>4</span>Glamour events in the media industry, including premieres, screenings and VIP parties</li>
+                            <li class="last"><span>3</span>Any Investors personally interested in investing directly in a specific film project</li>
                         </ul>
                     </div>
                 </article>
@@ -273,7 +270,7 @@
 
                     <div id="scenario-copy">
                         <h2>Media Industry Scenario</h2>
-                        <p>Traditionally, the film business been thought of as a high-risk area with only a small chance of providing investor returns. But in recent years, the investment climate has changed dramatically.</p> 
+                        <p>Traditionally, the film business been thought of as a high-risk area with only a small chance of providing investor returns. But in recent years, the investment climate has changed dramatically.</p>
 
                         <p>The advent of the DVD format and the growth in international markets have established steady flows of predictable revenue streams. This fundamental shift has encouraged new classes of sophisticated investors, such as hedge funds and private equity firms, to look to the film sector for higher returns with a risk profile unrelated to traditional investments.</p>
 
@@ -294,7 +291,7 @@
                     <h2>The SFF Model</h2>
                     <p>Our model is built upon the conviction that a diversified portfolio of carefully chosen feature films is not correlated to traditional investment markets and indices, but rather that movie assets will continue to grow, building on the industry’s performance in the past two decades of recession-resistant growth.</p>
 
-                    <p>Conservatively forecasting annualised returns to investors in the range of 15-20%.</p>
+                    <p id="forecasting">Conservatively forecasting annualised returns to investors in the range of 15-20%.</p>
 
                     <h2>Investment Strategy</h2>
                     <ul>
@@ -302,11 +299,16 @@
                         <li>Invest a maximum of 35% of all budget films on an equity basis;</li>
                         <li>Co-finance a mixed slate of relatively low-cost productions in conjunction with mainstream Hollywood movies in the dget range of £500K to £50 million;</li>
                         <li>Partner with commercially successful producers and studios across a diversified slate of films with a pre-sales distribution agreement, building guaranteed asset value in the fund;</li>
+                        <li>Appoint SFF employees to each film production to supervise the project;</li>
+                        <li>Put completion bonds/ insurance in place • Develop a co-marketing strategy</li>
+                        <li>Hedge with similar funds</li>
+                        <li>Benefit from tax reliefs</li>
+                        <li>Add on the music revenue stream as a plus (milestone)</li>
                     </ul>
 
                     <h2>Benefits</h2>
                     <h3>Financial Benefits:</h3>
-                    <p>Tax Relief*</p>
+                    <p class="bold">Tax Relief*</p>
                     <ul>
                         <li>Up to 30% Initial Income Tax Relief reducing the net costs of investment</li>
                         <li>Capital Gains Tax Deferral afforded by the EIS (CGT Freedom)</li>
@@ -317,7 +319,7 @@
 
                     <p>*Only for UK Tax payers. Different tax relief schemes apply according to the country where the film is shot. e.g. Canada offers an even higher Initial Income Tax Relief of 48%.</p>
 
-                    <h3>Investment Return</h3>
+                    <p class="bold">Investment Return</p>
                     <ul>
                         <li>High returns from movie profits</li>
                         <li>Quick returns and long life investments</li>
@@ -393,7 +395,11 @@
                 
                 <article class="col-2">
                     <h2>Summary</h2>
-                    <p class="first">An alternative investment with a double digit return target! A tax relief scheme in place for UK Taxpayers! More than 25 years’ experience Strong and established relationships with film studios and distribution companies Strong credentials with a proven track record in making money A worldwide presence making the Fund accessible to anyone</p>
+                    <p class="first">An alternative investment with a double digit return target!<br> 
+                        A tax relief scheme in place for UK Taxpayers!<br> 
+                        More than 25 years’ experience Strong and established relationships with film studios and distribution companies<br> 
+                        Strong credentials with a proven track record in making money<br>
+                        A worldwide presence making the Fund accessible to anyone</p>
 
                     <h2>Risk factors</h2>
                     <p>The information and opinions contained in this document have been compiled or arrived at based upon information obtained from sources believed to be reliable, but are not guaranteed as being accurate nor is it a complete statement or summary of the securities, markets or developments referred to.</p> 
@@ -418,14 +424,10 @@
                  </div>
 
                 <div id="contact-info">
-                    <p>Level 33,<br> 
-                    25 Canada Square,<br> 
-                    Canary Wharf,<br> 
-                    London,<br> 
-                    E14 5LQ,<br> 
-                    UK</p>
+                    <p>Soho Film Finance, Tower 42, 25 Old Broad Street, London, EC2N 1HN, UK</p> 
+                    <p>Soho Music Recording Studio, 39 Great Windmill Street, London W1D 7LX.</p>
 
-                    <p><a href="http://www.sohofilmfinance.com" target="_blank">www.sohofilmfinance.com</a></p>
+                    <p class="website"><a href="http://www.sohofilmfinance.com" target="_blank">www.sohofilmfinance.com</a></p>
 
                     <p><span>For Investments:</span> <a href="mailto:dcottarelli@sohofilmfinance.com">dcottarelli@sohofilmfinance.com</a><br>
                     <span>For Film Submissions:</span> <a href="mailto:tlinden@sohofilmfinance.com">tlinden@sohofilmfinance.com</a></p>
@@ -441,7 +443,7 @@
     </div><!-- End of wrapper -->
 
     <footer>
-        <nav class="main-nav">
+        <nav class="main-nav footer">
             <ul>
                 <li><a href="#introduction">&copy; SOHO Film Finance</a></li>
                 <li><a href="#contact">Contact us</a></li>
