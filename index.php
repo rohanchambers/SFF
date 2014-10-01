@@ -1,3 +1,8 @@
+<?php
+// Whether this is production version or not
+$PRODUCTION = TRUE;
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -7,23 +12,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>SOHO FILM FINANCE</title>
-    <meta name="description" content="
-    We are an EIS film investment company based in London, specialising in sourcing high profile film and television projects in order to reach the highest possible returns for our clients.">
+    <meta name="description" content="We are an EIS film investment company based in London, specialising in sourcing high profile film and television projects in order to reach the highest possible returns for our clients.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
+    <?php if ($PRODUCTION) { ?>    
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/skrollr-keyframes.css" data-skrollr-stylesheet />        
+    <?php } else { ?>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/skrollr-keyframes.css" data-skrollr-stylesheet />
-    
+     <?php } ?>
+
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body id="skrollr-body">
+<body>
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
         <div id="mobile-logo">Soho Film Finance</div>
-        <nav class="main-nav">
+        <nav class="main-nav show-hide">
             <ul>
                 <li id="nav-item-one"><a href="#introduction">Intro</a></li>
                 <li><a href="#welcome">Welcome</a></li>
@@ -43,6 +52,7 @@
         </div>
     </header>
 
+<div id="skrollr-body" class="parallax-container">   
     <div id="introduction" class="wrapper"> 
         <div class="container">
             <div class="content">
@@ -71,7 +81,7 @@
                 <article class="col-2" id="about-us">
                     <h2>About us</h2>
                     <p>We are an EIS Film Investment Company based in London, specialising in sourcing high profile film and television projects in order to reach the highest possible returns for our clients.</p>
-                    <p class="primary-color">Our head office is located in Canary Wharf, London, one of the world’s most reputable financial centres.</p>
+                    <p class="primary-color">Our head office is located in tower 42, city of london, one of the world’s most reputable financial centres.</p>
                     <p>We are also proud of our two music recording studios in Soho. Combining these resources, we are able to deliver the perfect alternative investment.</p>
                 </article>              
             </div><!-- End of content -->
@@ -110,7 +120,7 @@
                         <img src="img/directors/robert.jpg" alt="Robert Graham, Film - Tax Advisor">
                         <h3>Robert Graham, Film - Tax Advisor</h3> 
                         <p>Robert is Director of Graham Associates (International) Ltd., practising for over 23 years. He is an International Accountant (in the UK), based in Wales, London and Los Angeles. Rob has a track record of helping to produce British and international films by ensuring film investors enjoy the best available tax incentives by financially managing the investment and minimizing risk. He is a member of the Enterprise Investment Scheme Association, recognized by HM Treasury. Committed to excellence in creating sound, tax efficient investment schemes, they have provided financial contractual advice to major international film and TV organisations and talent agencies.</p>
-                        <p>Having worked on over 30 films in the UK and internationally with budgets ranging from the lower end to multi million pound projects, Graham has built a reputation for honesty and total transparency both in the UK and in the US . Rob is also a director of several film production companies in the UK and US and is personal accountant to several well-known British actors, TV personalities and international talent. He is a Patron of the anti knife and gun crime charity, The Ben Kinsella Trust.</p>
+                        <p>Having worked on over 30 films in the UK and internationally with budgets ranging from the lower end to multi million pound projects, Graham has built a reputation for honesty and total transparency both in the UK and in the US. Rob is also a director of several film production companies in the UK and US and is personal accountant to several well-known British actors, TV personalities and international talent. He is a Patron of the anti knife and gun crime charity, The Ben Kinsella Trust.</p>
                     </div>
 
                     <div class="profile">
@@ -127,17 +137,17 @@
         <div class="container clearfix">
             <div class="content">
                 <article class="col-1">
-                    <span id="text-be">Be</span>
+                    <div id="text-be">Be</div>
                 </article>
 
                 <article class="col-2">
                     <div id="group-persons"></div>                    
                     
-                    <span id="text-miles">Miles</span> 
-                    <span id="text-ahead">ahead</span>
+                    <div id="text-miles">Miles</div> 
+                    <div id="text-ahead">ahead</div>
                     
-                    <span id="text-investors">investors</span>
-                    <span id="text-traditional">of traditional</span>
+                    <div id="text-investors">investors</div>
+                    <div id="text-traditional">of traditional</div>
                     
                     <div id="person"></div>
                 </article>  
@@ -147,7 +157,6 @@
     </div><!-- End of wrapper -->
 
     <div id="mission" class="wrapper">
-
             <div class="content">
                 <article class="col-1" id="missionValues">
                     <ul id="mission-points">
@@ -198,7 +207,6 @@
                     <img src="img/mission/bg_worldwide_map.png" alt="Worldwide Representation">
                 </article>
             </div><!-- End of content -->
-
     </div><!-- End of wrapper -->
 
     <div id="regulatory" class="wrapper">    
@@ -257,11 +265,9 @@
                     <div id="what-we-offer">
                         <h2>What we offer</h2>
                         <ul>
-                            <li><span>1</span>An EIS Film Fund for UK investors, trust investors, or any others who expect to earn superior returns in an uncorrelated asset class and benefit from a tax relief scheme</li>
-
-                            <li><span>2</span>An Offshore Film Fund for non-UK investors, or any investors looking for a tax free environment</li>
-
-                            <li class="last"><span>3</span>Any Investors personally interested in investing directly in a specific film project</li>
+                            <li><span>1</span>An EIS Film Fund for UK investors, trust investors, or any others who expect to earn superior returns in an uncorrelated asset class and benefit from a tax relief scheme 1 2 3</li>
+                            <li><span>2</span>Any Investors personally interested in investing directly in a specific film project</li>
+                            <li class="last"><span>3</span>Glamour events in the media industry, including premieres, screenings and VIP parties</li>
                         </ul>
                     </div>
                 </article>
@@ -271,9 +277,7 @@
                     <div id="scenario-copy">
                         <h2>Media Industry Scenario</h2>
                         <p>Traditionally, the film business been thought of as a high-risk area with only a small chance of providing investor returns. But in recent years, the investment climate has changed dramatically.</p>
-
                         <p>The advent of the DVD format and the growth in international markets have established steady flows of predictable revenue streams. This fundamental shift has encouraged new classes of sophisticated investors, such as hedge funds and private equity firms, to look to the film sector for higher returns with a risk profile unrelated to traditional investments.</p>
-
                         <p>As a result, film is now seen as a valid and attractive asset class in its own right. At least 30% of all studio movies are now made in partnership with third-party funding and the concept of “slate finance” is acknowledged to lower costs, reduce risks and raise returns for studios and investors alike.</p>
                     </div>
                 </article>                    
@@ -364,27 +368,26 @@
             <div class="content">
                 <article class="col-1" id="fund-facts">
                     <h2>EIS Soho Film Fund Facts</h2>
-                    <p><span>Entity:</span> Varcale Capital Management Ltd, 
-                    EIS investment company incorporated in England. 
+                    <p><span>Entity:</span> Varcale Capital Management Ltd,
+                    EIS investment company incorporated in England.
                     (Registration No. 07732786)</p>
 
-                    <p><span>Financial Year:</span>  2012</p>
+                    <p><span>Financial Year:</span> 2014</p>
 
-                    <p><span>Base Currency:</span> GBP Minimumv 
+                    <p><span>Base Currency:</span> GBP Minimumm 
                     <span>Investment:</span> £100,000<br>
                     <span>Charges and Fees:</span> Upfront fee 5%<br>
                     <span>Annual Management Fee:</span> 2%<br>
-                    <span>Performance Fee:</span> 30% of increase in NAV<br> 
+                    <span>Performance Fee:</span> 35% of increase in NAV<br> 
                     (payable quarterly in arrears only on compound returns)</p>
 
-                    <p><span>Dealing and Valuation Frequency:</span> Quarterly<br>
+                    <p><span>Dealing and Valuation Frequency:</span> Annualy<br>
                     <span>Investment Manager:</span> Soho Film Finance<br>
-                    <span>Custodian:</span> Graham Associates (International) Limited<br>
-                    <span>Administrator:</span> Graham Associates (International) Limited<br> 
-                    <span>Bank:</span> RBS<br> 
+                    <span>Custodian/Administrator:</span> Graham Associates (International) Limited<br>
+                    <span>Bank:</span> Royal Bank of Scotland<br> 
                     <span>Accountant Advisor:</span> Graham Associates (International) Limited</p> 
 
-                    <p><span>Business Address:</span> Level 33, 25 Canada Square, E14 5LQ</p>
+                    <p><span>Business Address:</span> Tower 42, 25 Old Broad Street, London, EC2N 1HN, UK</p>
                     
                     <p id="quote">
                         <span id="strong">A strong</span>
@@ -427,7 +430,7 @@
                     <p>Soho Film Finance, Tower 42, 25 Old Broad Street, London, EC2N 1HN, UK</p> 
                     <p>Soho Music Recording Studio, 39 Great Windmill Street, London W1D 7LX.</p>
 
-                    <p class="website"><a href="http://www.sohofilmfinance.com" target="_blank">www.sohofilmfinance.com</a></p>
+                    <p class="website">www.sohofilmfinance.com</p>
 
                     <p><span>For Investments:</span> <a href="mailto:dcottarelli@sohofilmfinance.com">dcottarelli@sohofilmfinance.com</a><br>
                     <span>For Film Submissions:</span> <a href="mailto:tlinden@sohofilmfinance.com">tlinden@sohofilmfinance.com</a></p>
@@ -441,7 +444,7 @@
                 </div>
             </div><!-- End of content -->
     </div><!-- End of wrapper -->
-
+</div> 
     <footer>
         <nav class="main-nav footer">
             <ul>
@@ -451,21 +454,16 @@
         </nav>
     </footer>
 
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
+<?php if ($PRODUCTION) { ?>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+<?php } else { ?>
 <script src="js/vendor/skrollr.stylesheets.min.js"></script>
 <script src="js/vendor/skrollr.min.js"></script>
 <script src="js/main.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<!-- <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>-->
+<?php } ?>
 </body>
 </html>

@@ -26,7 +26,7 @@ $(function(){
 	mainNav = $('header .main-nav');
 
 	$(window).on('resize', function () {
-		if ($(window).width() <= mobileWidth) {
+		if ($(window).width() <= 768) {
 			
 			skrollr.init().destroy();
 
@@ -36,13 +36,14 @@ $(function(){
 
 		if ($(window).width() >= 975) {		
 			mainNav.show();
-		} else {
+		}
+		 else {
 			mainNav.hide();
 		}
 	});
 	
 	// Mobile hamburger menu show/hide
-	$('#hamburger a, .main-nav a').click( function(e){
+	$('#hamburger a, header .main-nav a').click( function(e){
 		if ($(window).width() <= 975) {		
 			$(mainNav).slideToggle();
 		}

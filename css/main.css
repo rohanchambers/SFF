@@ -205,7 +205,7 @@ footer {
 
 /* INTRO SLIDE */
 #introduction {
-  background: #8ea4af url(../img/intro/bg_intro.gif) no-repeat fixed;
+  background: url(../img/intro/bg_intro.gif) no-repeat fixed;
   background-position: 0 0;
   background-size: cover; }
   #introduction .container {
@@ -361,14 +361,22 @@ footer {
 #milesAhead .content .col-1, #milesAhead .content .col-2 {
   position: relative;
   min-height: 940px; }
-#milesAhead span {
+#milesAhead #text-be,
+#milesAhead #text-miles,
+#milesAhead #text-ahead,
+#milesAhead #text-traditional,
+#milesAhead #text-investors {
+  display: block;
   text-transform: uppercase;
-  line-height: normal; }
+  line-height: 1; }
 #milesAhead #text-be {
   position: absolute;
-  top: 7%;
+  top: 0%;
   font-size: 750px;
   color: #8ea4af; }
+@-moz-document url-prefix() {
+  #milesAhead #text-be {
+    line-height: 80%; } }
 #milesAhead #text-miles {
   position: absolute;
   top: 21%;
@@ -382,13 +390,13 @@ footer {
   font-size: 220px; }
 #milesAhead #text-traditional {
   position: absolute;
-  top: 41%;
+  top: 44%;
   right: 0;
   font-size: 56px;
   color: #8ea4af; }
 #milesAhead #text-investors {
   position: absolute;
-  top: 47%;
+  top: 50%;
   right: 0;
   font-size: 83px;
   color: #000; }
@@ -760,10 +768,10 @@ footer {
 
   #hamburger {
     position: absolute;
-    top: 5px;
+    top: 8px;
     right: 10px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: url(../img/mobile/hamburger.png) no-repeat;
     background-size: 100%; }
     #hamburger a {
@@ -824,9 +832,6 @@ footer {
   #star {
     width: 100%; } }
 @media (max-width: 768px) {
-  /*    .container {
-          background: blue;
-      }*/
   #milesAhead {
     display: none; }
 
@@ -911,7 +916,7 @@ footer {
     width: 399px; } }
 @media (max-width: 480px) {
   .container {
-    /*background: green;*/
+    /*        background: green;*/
     margin: 0 2%;
     padding-top: 0px;
     width: auto; }
@@ -927,8 +932,46 @@ footer {
   #directors .col-2 {
     padding-top: 0px !important; }
 
+  #intro h1 {
+    margin-top: 20px; }
+
   #about-us h2, #about-us p {
     text-align: left; }
+
+  #introduction {
+    min-height: 500px; }
+    #introduction .container {
+      height: 500px; }
+
+  #welcome {
+    height: 800px; }
+
+  #logo {
+    top: 9%;
+    left: 3%; }
+
+  #circle-top {
+    top: 10%;
+    right: 10%;
+    left: auto; }
+
+  #circle-small {
+    top: 22%;
+    right: 5%;
+    left: auto; }
+
+  #circle-bottom {
+    top: 32%;
+    right: 10%;
+    left: auto; }
+
+  #joy {
+    top: 4%;
+    color: #8ea4af;
+    background: none;
+    text-indent: -9999px; }
+    #joy a {
+      text-indent: 0; }
 
   #mission-points {
     margin: 0 2%; }
@@ -936,10 +979,10 @@ footer {
       width: auto; }
 
   #star {
-    width: 80%;
+    width: 60%;
     height: 300px; }
     #star span {
-      font-size: 32px;
+      font-size: 30px;
       left: 18%; }
 
   #quote {
@@ -959,8 +1002,7 @@ footer {
     color: #FFF; } }
 @media (max-width: 320px) {
   .container {
-        /*background: yellow;
-*/
+    /*        background: yellow;*/
     margin: 0 2%;
     width: auto; }
 
@@ -996,7 +1038,8 @@ footer {
     background: #8ea4af;
     min-height: 0; }
     #introduction .container {
-      height: 500px; }
+      height: 500px;
+      /*            background: red;*/ }
     #introduction #logo {
       top: 10%;
       left: 3%; }
