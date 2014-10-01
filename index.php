@@ -23,7 +23,6 @@ $PRODUCTION = TRUE;
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/skrollr-keyframes.css" data-skrollr-stylesheet />
      <?php } ?>
-
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
