@@ -80,7 +80,7 @@ $PRODUCTION = TRUE;
                 <article class="col-2" id="about-us">
                     <h2>About us</h2>
                     <p>We are an EIS Film Investment Company based in London, specialising in sourcing high profile film and television projects in order to reach the highest possible returns for our clients.</p>
-                    <p class="primary-color">Our head office is located in tower 42, city of london, one of the world’s most reputable financial centres.</p>
+                    <p class="primary-color">Our head office is located in Canary Wharf, London, one of the world's most reputable financial centres.</p>
                     <p>We are also proud of our two music recording studios in Soho. Combining these resources, we are able to deliver the perfect alternative investment.</p>
                 </article>              
             </div><!-- End of content -->
@@ -386,7 +386,7 @@ $PRODUCTION = TRUE;
                     <span>Bank:</span> Royal Bank of Scotland<br> 
                     <span>Accountant Advisor:</span> Graham Associates (International) Limited</p> 
 
-                    <p><span>Business Address:</span> Tower 42, 25 Old Broad Street, London, EC2N 1HN, UK</p>
+                    <p><span>Business Address:</span> Level 33, 25 Canada Square, Canary Wharf, E14 5LQ, London, UK</p>
                     
                     <p id="quote">
                         <span id="strong">A strong</span>
@@ -426,7 +426,7 @@ $PRODUCTION = TRUE;
                  </div>
 
                 <div id="contact-info">
-                    <p>Soho Film Finance, Tower 42, 25 Old Broad Street, London, EC2N 1HN, UK</p> 
+                    <p>Soho Film Finance, Level 33, 25 Canada Square, Canary Wharf, E14 5LQ, London, UK</p> 
                     <p>Soho Music Recording Studio, 39 Great Windmill Street, London W1D 7LX.</p>
 
                     <p class="website">www.sohofilmfinance.com</p>
