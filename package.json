@@ -12,6 +12,7 @@
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-csscomb": "^3.0.0",
-    "grunt-contrib-concat": "^0.5.0"
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-bower-verify": "^2.0.0"
   }
 }
