@@ -409,9 +409,10 @@ footer {
     padding-top: 60px;
 
     .content {
-        .col-2 {
+        .col-2.dist-advisors {
             float: left;
             margin-left: 0;
+            clear: both;
         }
     }
 
@@ -983,7 +984,51 @@ footer {
     }
 }
 
+.lightbox-bg, 
+.lightbox-disclaimer {overflow-y: scroll; z-index: 1; position:fixed; top:0; left:0; width:100%; height:100%; }
+.lightbox-bg { background:#000; opacity:0.8; filter:alpha(opacity=8);}
+.lightbox-panel { position: relative; width: 500px; height: auto; margin: 100px auto;}
+.lightbox-content {  overflow-y: scroll; height: auto; border-top: 5px solid #8ea4af; background-color: #FFF; padding: 15px;}
+.lightbox-content a {
+    color: #000;
+}
 
+// Global site buttons
+.btn-global {
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #8ea4af;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+
+        &.btn-global:hover {
+            background-color: #CCC;
+            color: #333;
+            -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                    -ms-border-radius: all 500ms ease;
+                        transition: all 500ms ease;
+        }
+
+        &.btn-global:after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: 9px;
+        }
+}
+
+// .close { position:absolute; top:-20px; right:0;}
+// .close a { color: #FFF;}
+.no-js #lightbox { position: relative; width: 430px; display: block; float: right;}
+.no-js #lightbox-content { float: left; margin-top: 15px; padding: 0; background: none;}
+.no-js #lightbox-panel { width: 430px; margin: 0;}
+.no-js #close { display: none;}
+.no-js .home #lightbox { float: left;}
+.no-js .home #lightbox h2 { padding-top: 10px;}
 
 
 
@@ -1213,16 +1258,21 @@ footer {
 
 @media (max-width: 480px) {
     .container {
-/*        background: green;*/
         margin: 0 2%;
         padding-top: 0px;
         width: auto;
     }
     
-    .lightbox-panel {
-        width: 100%!important;
-        overflow-x: scroll;
-    }
+    // .lightbox-content {
+    //     padding: 4%;
+    //     width: 80%;
+    //     border: none;
+    // }
+    
+    // .lightbox-panel {
+    //     width: auto;
+    //     margin: 40px auto 0 auto;
+    // }
 
     .col-1,
     .col-2 {
@@ -1562,22 +1612,7 @@ footer {
     }
 }
 
-.lightbox-bg, 
-.lightbox-disclaimer {overflow-y: scroll; z-index: 1; position:fixed; top:0; left:0; width:100%; height:100%; }
-.lightbox-bg { background:#000; opacity:0.8; filter:alpha(opacity=8);}
-.lightbox-panel { position: relative; width: 500px; height: auto; margin: 100px auto;}
-.lightbox-content {  overflow-y: scroll; height: auto; border-top: 5px solid #8ea4af; background-color: #FFF; padding: 15px;}
-.lightbox-content a {
-    color: #000;
-}
-// .close { position:absolute; top:-20px; right:0;}
-// .close a { color: #FFF;}
-.no-js #lightbox { position: relative; width: 430px; display: block; float: right;}
-.no-js #lightbox-content { float: left; margin-top: 15px; padding: 0; background: none;}
-.no-js #lightbox-panel { width: 430px; margin: 0;}
-.no-js #close { display: none;}
-.no-js .home #lightbox { float: left;}
-.no-js .home #lightbox h2 { padding-top: 10px;}
+
 
 /*Notes*/
 

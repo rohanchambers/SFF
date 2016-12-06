@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 			  separator: ';',
 			},
 			dist: {
-			  src: ['js/vendor/skrollr.stylesheets.min.js', 'js/vendor/skrollr.min.js'],
+			  src: ['js/vendor/skrollr.stylesheets.min.js', 'js/vendor/skrollr.min.js', 'js/vendor/jquery.cookie.js'],
 			  dest: 'js/plugins.min.js',
 			},
 		},
@@ -65,6 +65,6 @@ module.exports = function (grunt) {
 grunt.registerTask('default', ['watch']);
 
 // Default task(s).
-grunt.registerTask('grunt prod', ['jshint','uglify', 'concat', 'sass', 'cssmin']);	
+grunt.registerTask('prod', ['jshint','uglify', 'concat', 'sass', 'cssmin']);	
   
 };

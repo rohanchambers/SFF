@@ -45,7 +45,7 @@ $PRODUCTION = FALSE;
             <li><a href="#milesAhead">Miles ahead</a></li>
             <li><a href="#mission">Mission &amp; Values</a></li>   
             <li><a href="#regulatory">Regulatory Environment</a></li>
-            <li><a href="#our-products">Our Products</a></li> 
+            <li><a href="#our-products">Our Investments</a></li> 
             <li><a href="#music-rights">Music Rights</a></li> 
             <li><a href="#our-process">Our Process</a></li> 
             <li><a href="#summary">Summary</a></li> 
@@ -136,7 +136,7 @@ $PRODUCTION = FALSE;
                     </div>
                 </article>
 
-                <article class="col-2 dist-advisors">
+<!--                 <article class="col-2 dist-advisors">
                     <div class="header-box">    
                         <h2>Distribution Advisors</h2>
                     </div>                  
@@ -154,7 +154,7 @@ $PRODUCTION = FALSE;
                         <h3>Distribution Advisor - Steve Beecham</h3> 
                         <p>Steve has over 23 years experience in the media arena from publishing to licencing He was a former General Manager at Universal Studios who contributed to 163% growth in back catalogue turnover over a 3 year period.</p>
                     </div>
-                </article>                                 
+                </article>   -->                               
             </div><!-- End of content -->
         </div><!-- End of container -->
     </div><!-- End of wrapper -->
@@ -258,7 +258,7 @@ $PRODUCTION = FALSE;
                     </div>
                 </article>
                 <article class="col-2" id="credentials">
-                    <div id="star"><span>Tangible Assets<br> Our Credentials</span></div>
+                    <div id="star"><span>Tangible Assets and<br> Our Credentials</span></div>
                     <ul id="credentials-list">
                         <li>More than 25 years’ experience in the industry.</li>
                         <li>Strong and established relationships with film studios and distribution companies.</li>
@@ -288,7 +288,7 @@ $PRODUCTION = FALSE;
                     <div id="what-we-offer">
                         <h2>What we offer</h2>
                         <ul>
-                            <li><span>1</span>An EIS Film Fund for UK investors, trust investors, or any others who expect to earn superior returns in an uncorrelated asset class and benefit from generous tax reliefs offered with EIS</li>
+                            <li><span>1</span>An EIS Film Fund for UK investors, trust investors, or any others who expect to earn superior returns in an uncorrelated asset class and benefit from a tax relief scheme</li>
                             <li><span>2</span>Any Investors personally interested in investing directly in a specific film project</li>
                             <li class="last"><span>3</span>Glamour events in the media industry, including premieres, screenings and VIP parties</li>
                         </ul>
@@ -455,10 +455,11 @@ $PRODUCTION = FALSE;
                     <p>48 Warwick<br> street<br> London<br> W1B 5NL</p>
 
                     <p class="website">www.sohofilmfinance.com</p>
-                    <p><span>Phone:</span> 0207 038 8952</p>
-                    <p><span>For Investments:</span> <a href="mailto:dcottarelli@sohofilmfinance.com">dcottarelli@sohofilmfinance.com</a><br>
-                    <span>For Film Submissions:</span> <a href="mailto:submissions@sohofilmfinance.com">submissions@sohofilmfinance.com</a></p>
 
+                    For Film Submissions: enquiries@varcalecap.com
+                    <p><span>Phone:</span> 0207 038 8952</p>
+                    <p><span>For Film Submissions:</span> 
+                    <a href="mailto:enquiries@varcalecap.com">enquiries@varcalecap.com</a><p>
                     <p>Varcale Capital Management Ltd, Register No. 07732786</p>
 
                     <div id="credits">
@@ -491,8 +492,8 @@ $PRODUCTION = FALSE;
                 <p>SFF’s brochure is translated into various languages for the added convenience of the client. In the event of con ict between the original English content and any translation in other languages, or any other translated communications by SFF, the english version shall prevail.</p>
                 <p>Soho Film Finance is a trading name of Varcale Capital Management Ltd Registered No. 07732786</p>
                 <p>Do you agree yes or no?</p>
-                <p><a id='cta-agree' href="#" class="close">Yes </a>            
-                <a href="http://google.com" class="close"> No </a></p>
+                <p><a id='cta-agree' href="#" class="close btn-global">Yes </a>            
+                <a href="http://google.com" class="close btn-global"> No </a></p>
             </div>
         </div>
     </div>
