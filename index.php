@@ -1,6 +1,6 @@
 <?php
 // Whether this is production version or not
-$PRODUCTION = TRUE;
+$PRODUCTION = FALSE;
 ?>
 
 <!DOCTYPE html>
@@ -14,8 +14,9 @@ $PRODUCTION = TRUE;
     <title>SOHO FILM FINANCE</title>
     <meta name="description" content="We are an EIS film investment company based in London, specialising in sourcing high profile film and television projects in order to reach the highest possible returns for our clients.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <?php if ($PRODUCTION) { ?>    
+    <?php if ($PRODUCTION) { ?>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="css/skrollr-keyframes.css" data-skrollr-stylesheet />        
     <?php } else { ?>
@@ -23,33 +24,38 @@ $PRODUCTION = TRUE;
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/skrollr-keyframes.css" data-skrollr-stylesheet />
      <?php } ?>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/mustache.min.js"></script>    
 </head>
 <body>
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <header>
-        <div id="mobile-logo">Soho Film Finance</div>
-        <nav class="main-nav show-hide">
-            <ul>
-                <li id="nav-item-one"><a href="#introduction">Intro</a></li>
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#directors">Directors</a></li>
-                <li><a href="#milesAhead">Miles ahead</a></li>
-                <li><a href="#mission">Mission &amp; Values</a></li>   
-                <li><a href="#regulatory">Regulatory Environment</a></li>
-                <li><a href="#our-products">Our Products</a></li> 
-                <li><a href="#music-rights">Music Rights</a></li> 
-                <li><a href="#our-process">Our Process</a></li> 
-                <li><a href="#summary">Summary</a></li> 
-                <li><a href="#contact">Contact us</a></li>                                    
-            </ul>
-        </nav>
-        <div id="hamburger">
-            <a href="#"></a>
-        </div>
-    </header>
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<header>
+    <div id="mobile-logo">Soho Film Finance</div>
+    <nav class="main-nav show-hide">
+        <ul>
+            <li id="nav-item-one"><a href="#introduction">Intro</a></li>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#directors">Directors</a></li>
+            <li><a href="#milesAhead">Miles ahead</a></li>
+            <li><a href="#mission">Mission &amp; Values</a></li>   
+            <li><a href="#regulatory">Regulatory Environment</a></li>
+            <li><a href="#our-products">Our Products</a></li> 
+            <li><a href="#music-rights">Music Rights</a></li> 
+            <li><a href="#our-process">Our Process</a></li> 
+            <li><a href="#summary">Summary</a></li> 
+            <li><a href="#contact">Contact us</a></li>                                    
+        </ul>
+    </nav>
+    <div id="hamburger">
+        <a href="#"></a>
+    </div>
+</header>
 
 <div id="skrollr-body" class="parallax-container">   
     <div id="introduction" class="wrapper"> 
@@ -71,17 +77,17 @@ $PRODUCTION = TRUE;
             <div class="content">
                 <article class="col-1" id="intro">
                     <h1>Welcome <br>to Soho Film Finance</h1>
-                    <p class="italic">"We aim to be recognized as one of the most successful film investment companies for delivering enjoyable Film and TV programs and reaching consistently double digit return for our clients".</p> 
+                    <p class="italic">"We aim to be recognized as one of the most successful film investment companies for delivering enjoyable Film and TV programs and reaching consistent double digit returns for our clients".</p> 
                     <p class="primary-color">Davide Cottarelli, CEO &amp; Founder</p>
-                    <p class="italic">"As a music producer, I create compositions with the highest sound quality and innovative recording and mixing techniques. Selecting the right films and making the soundtrack for each film a success is our goal".</p>
+                    <p class="italic">"As a music producer, I create compositions with the highest sound quality using innovative recording and mixing techniques. Selecting the right films and making the soundtrack for each film a success is our goal".</p>
                     <p class="primary-color">Tom Linden, Creative Director &amp; Founder</p>        
                 </article>
                 
                 <article class="col-2" id="about-us">
                     <h2>About us</h2>
-                    <p>We are an EIS Film Investment Company based in London, specialising in sourcing high profile film and television projects in order to reach the highest possible returns for our clients.</p>
-                    <p class="primary-color">Our head office is located in Canary Wharf, London, one of the world's most reputable financial centres.</p>
-                    <p>We are also proud of our two music recording studios in Soho. Combining these resources, we are able to deliver the perfect alternative investment.</p>
+                    <p>We aim to be recognised as one of the most successful film investment companies for delivering enjoyable Film and TV programs and reaching consistent double digit returns for our clients</p>
+                    <p class="primary-color">Our main office is located at N.0. 48 Warwick Street, Soho in the heart of Londons media district.</p>
+                    <p>We are also proud of our two music recording studios in Soho that when combined with our other resources deliver the perfect alternative investment.</p>
                 </article>              
             </div><!-- End of content -->
         </div><!-- End of container -->
@@ -101,13 +107,14 @@ $PRODUCTION = TRUE;
                     <div class="profile">
                         <img src="img/directors/davide.jpg" alt="Davide Cottarelli, CEO">
                         <h3>Davide Cottarelli, CEO</h3>
-                        <p>With a masters degree in PR and a major in Marketing and Communication, Davide has more than 15 years of sales experience. He is an associate member of the Chartered Security Investment Institute and a fully qualified Stockbroker, CFD, FX and Commodities Trader. His past experience involves projects in the City with stock brokerage houses, FX brokering and introducing businesses to many top prime dealer brokers and investment banks.</p>
+                        <p>With a masters degree in PR and a major in Marketing and Communications, Davide has more than 15 years of sales experience. He is an associate member of the Chartered Security Investment Institute and a fully qualified Stockbroker, CFD, FX and Commodities Trader. His past experience involved projects in the City with stock brokerage houses, FX brokering and introducing businesses to many top prime dealer brokers and investment banks.</p>
+                        <p>Davide is an Executive Producer of the film “The Exorcism of Anna Ecklund” and a BAFTA Ambassador &amp; Asian Patron. He is also a joint founder of the China UK Film Fund which has seed investment of £50 million rising to £1.5 billion by 2020.</p>
                     </div>
 
                     <div class="profile">
                         <img src="img/directors/tom.jpg" alt="Tom Linden, Creative Director">
                         <h3>Tom Linden, Creative Director</h3>
-                        <p>Tom Linden’s music has been used in several films including Chandni Chowk to China, on TV series such as Top Gear and Green Wing, on documentaries including Northern Skies and Animal Planet, as idents for Desperate Housewives and MTV Cribs and on worldwide adverts for Baileys, Orange, Visa, Amnesty International and Firetrap. In early 2012, as part of a major rebranding, he was commissioned to give Channel 5 News a fresh sound including theme music and all titles. His compositions feature regularly on all major TV channels such as the BBC, MTV, Discovery Channel, ABC, Channel 4, Sky Sports, CBBC, Channel 5, E4 and ITV. Tom is in charge of selecting the right films for Soho Film Finance.</p>
+                        <p>Tom Linden’s music has been used in several films including Chandni Chowk to China, on TV series such as Top Gear and Green Wing, on documentaries including Northern Skies and Animal Planet, as idents for Desperate Housewives and MTV Cribs and on worldwide adverts for Baileys, Orange, Visa, Amnesty International and Firetrap. In early 2012, as part of a major rebranding, he was commissioned to give Channel 5 News a fresh sound including theme music and all titles. His compositions feature regularly on all major TV channels such as the BBC, MTV, Discovery Channel, ABC, Channel 4, Sky Sports, CBBC, Channel 5, E4 and ITV. Recently Tom composed the music for two new films ‘Brotherhood’ Directed and Produced by Noel Clarke, and the second called ‘Urban Hymn’ Directed by Michael Caton-Jones. Tom is in charge of selecting the right films for Soho Film Finance.</p>
                     </div>
                 </article>
 
@@ -118,8 +125,8 @@ $PRODUCTION = TRUE;
                     <div class="profile">
                         <img src="img/directors/robert.jpg" alt="Robert Graham, Film - Tax Advisor">
                         <h3>Robert Graham, Film - Tax Advisor</h3> 
-                        <p>Robert is Director of Graham Associates (International) Ltd., practising for over 23 years. He is an International Accountant (in the UK), based in Wales, London and Los Angeles. Rob has a track record of helping to produce British and international films by ensuring film investors enjoy the best available tax incentives by financially managing the investment and minimizing risk. He is a member of the Enterprise Investment Scheme Association, recognized by HM Treasury. Committed to excellence in creating sound, tax efficient investment schemes, they have provided financial contractual advice to major international film and TV organisations and talent agencies.</p>
-                        <p>Having worked on over 30 films in the UK and internationally with budgets ranging from the lower end to multi million pound projects, Graham has built a reputation for honesty and total transparency both in the UK and in the US. Rob is also a director of several film production companies in the UK and US and is personal accountant to several well-known British actors, TV personalities and international talent. He is a Patron of the anti knife and gun crime charity, The Ben Kinsella Trust.</p>
+                        <p>Robert is a Director of Graham Associates (International) Ltd, and has been a practicing accountant for over 23 years. He is an International Accountant (in the UK), based in Wales, London and Los Angeles. Rob has a track record of helping to produce British and international films by ensuring film investors enjoy the best available tax incentives by financially managing the investment and minimizing risk. He is a member of the Enterprise Investment Scheme Association, recognized by HM Treasury and is committed to excellence in creating sound, tax efficient investment schemes, they have provided financial contractual advice to major international film and TV organisations and talent agencies.</p>
+                        <p>Having worked on over 30 films in the UK and internationally with budgets ranging from the lower end to multi million pound projects, Graham has built a reputation for honesty and total transparency both in the UK and in the US. Rob is also a director of several film production companies in the UK and US and is personal accountant to several well-known British actors, TV personalities and international talent. He is also a Patron of the anti knife and gun crime charity, The Ben Kinsella Trust.</p>
                     </div>
 
                     <div class="profile">
@@ -127,7 +134,27 @@ $PRODUCTION = TRUE;
                         <h3>Kristin Yeatman, Financing Specialist</h3> 
                         <p>She has more than 18 years of financing experience. In addition to senior positions at several global banks including Lloyd’s, she has also held consulting roles at Blackrock Solutions and (currently) Moody’s Analytics. Kristin’s solid background in corporate finance and project assessment is complemented by an artistic flair that makes her an ideal addition to the team.</p>
                     </div>
-                </article>                    
+                </article>
+
+                <article class="col-2 dist-advisors">
+                    <div class="header-box">    
+                        <h2>Distribution Advisors</h2>
+                    </div>                  
+                    <div class="profile">                        
+                        <h3>Distribution Advisor - Tony Taglienti</h3> 
+                        <p>Tony has over 28 years experience in Media content acquisition, production and publishing. With his business partner he was responsible for bringing the FIFA World Cup to the Global video market in 1990.</p>
+                    </div>
+
+                    <div class="profile">                        
+                        <h3>Distribution Advisor - Sally Wood</h3> 
+                        <p>Sally is the Contracts Administrator and responsible for oversees royalty reporting for our Distribution Team. She also manages the relationship with Sony DADC on packaging, DVD manufacturing, and stock management.</p>
+                    </div>
+
+                    <div class="profile">                        
+                        <h3>Distribution Advisor - Steve Beecham</h3> 
+                        <p>Steve has over 23 years experience in the media arena from publishing to licencing He was a former General Manager at Universal Studios who contributed to 163% growth in back catalogue turnover over a 3 year period.</p>
+                    </div>
+                </article>                                 
             </div><!-- End of content -->
         </div><!-- End of container -->
     </div><!-- End of wrapper -->
@@ -163,14 +190,14 @@ $PRODUCTION = TRUE;
                             <span>1</span>
                             <div class="description">
                                 <h3>Professionalism</h3>
-                                <p>We believe that being professional is the key  to any business. We try to present ourselves appropriately in any situation and adapt our manner according to local culture and attitude.</p>
+                                <p>We believe that being professional is the key  to any business relationship. We try to present ourselves appropriately in every situation and adapt our manner according to local culture.</p>
                             </div>
                         </li>
                         <li>
                             <span>2</span>
                             <div class="description">
                                 <h3>Integrity</h3>
-                                <p>We build our business relationships by treating our partners fairly, honestly, and transparently, anytime, anywhere, in any circumstance.</p>
+                                <p>We build our business relationships by treating our partners fairly, in any circumstance.</p>
                             </div>
                         </li>
                         <li>
@@ -222,7 +249,7 @@ $PRODUCTION = TRUE;
                             <span>rated banks and financial</span> 
                             <span>institutions and will undergo</span> 
                             <span>consistent operational audits</span> 
-                            <span>throughout the year These</span> 
+                            <span>throughout the year. These</span> 
                             <span>measures help to assure the</span> 
                             <span>highest financial reporting</span> 
                             <span>quality, transparency and</span> 
@@ -235,7 +262,7 @@ $PRODUCTION = TRUE;
                     <ul id="credentials-list">
                         <li>More than 25 years’ experience in the industry.</li>
                         <li>Strong and established relationships with film studios and distribution companies.</li>
-                        <li>More than 60 films and music projects; a proven track record of making money.</li>
+                        <li>More than 60 films and music projects with a proven track record of making money.</li>
                         <li>Music recording studio and post production suite in Soho.</li>
                         <li>EIS Approval by HRMC for tax.</li>
                     </ul>
@@ -248,13 +275,10 @@ $PRODUCTION = TRUE;
             <div class="content">
                 <article class="col-1">
                     <div id="our-products-copy">
-                        <h2>Our Products</h2>
-                        <p>We offer four types of products.<br>
-                        Each delivers a wide range of competitive advantages, 
-                        adapted and tailored to individual client profiles and needs.</p> 
+                        <h2>Our Investments</h2>
+                        <p>Each delivers a wide range of competitive advantages and can be adapted, and tailored to individual clients.</p> 
 
-                        <p>Our products are specifically meant for high net worth 
-                        individuals searching for speculative and tax relief investments, 
+                        <p>Our products are meant for HNWI, UHNWI and sophisticated investors who are searching for speculative and tax relief investments, 
                         in combination with glamour experiences for the more discerning.</p>
 
                         <p>Through our simple application form, it is easy and convenient 
@@ -264,7 +288,7 @@ $PRODUCTION = TRUE;
                     <div id="what-we-offer">
                         <h2>What we offer</h2>
                         <ul>
-                            <li><span>1</span>An EIS Film Fund for UK investors, trust investors, or any others who expect to earn superior returns in an uncorrelated asset class and benefit from a tax relief scheme 1 2 3</li>
+                            <li><span>1</span>An EIS Film Fund for UK investors, trust investors, or any others who expect to earn superior returns in an uncorrelated asset class and benefit from generous tax reliefs offered with EIS</li>
                             <li><span>2</span>Any Investors personally interested in investing directly in a specific film project</li>
                             <li class="last"><span>3</span>Glamour events in the media industry, including premieres, screenings and VIP parties</li>
                         </ul>
@@ -276,7 +300,7 @@ $PRODUCTION = TRUE;
                     <div id="scenario-copy">
                         <h2>Media Industry Scenario</h2>
                         <p>Traditionally, the film business been thought of as a high-risk area with only a small chance of providing investor returns. But in recent years, the investment climate has changed dramatically.</p>
-                        <p>The advent of the DVD format and the growth in international markets have established steady flows of predictable revenue streams. This fundamental shift has encouraged new classes of sophisticated investors, such as hedge funds and private equity firms, to look to the film sector for higher returns with a risk profile unrelated to traditional investments.</p>
+                        <p>With the advent of the DVD format and growth in international markets that have established steady flows of predictable revenue streams, a fundamental shift has encouraged new classes of sophisticated investors, such as hedge funds and private equity firms into this market. Investment into the film sector for higher returns with a risk profile uncorrelated to traditional investments.</p>
                         <p>As a result, film is now seen as a valid and attractive asset class in its own right. At least 30% of all studio movies are now made in partnership with third-party funding and the concept of “slate finance” is acknowledged to lower costs, reduce risks and raise returns for studios and investors alike.</p>
                     </div>
                 </article>                    
@@ -294,19 +318,20 @@ $PRODUCTION = TRUE;
                     <h2>The SFF Model</h2>
                     <p>Our model is built upon the conviction that a diversified portfolio of carefully chosen feature films is not correlated to traditional investment markets and indices, but rather that movie assets will continue to grow, building on the industry’s performance in the past two decades of recession-resistant growth.</p>
 
-                    <p id="forecasting">Conservatively forecasting annualised returns to investors in the range of 15-20%.</p>
+                    <p id="forecasting">Conservatively forecasting annualised returns to investors in the range of 15-20% Per Annum.</p>
 
                     <h2>Investment Strategy</h2>
                     <ul>
                         <li>The SFF will invest principally in a portfolio of high profile film projects following these criteria:</li>
-                        <li>Invest a maximum of 35% of all budget films on an equity basis;</li>
+                        <li>Invest a maximum 35% of the budget on an equity basis;</li>
                         <li>Co-finance a mixed slate of relatively low-cost productions in conjunction with mainstream Hollywood movies in the dget range of £500K to £50 million;</li>
-                        <li>Partner with commercially successful producers and studios across a diversified slate of films with a pre-sales distribution agreement, building guaranteed asset value in the fund;</li>
-                        <li>Appoint SFF employees to each film production to supervise the project;</li>
-                        <li>Put completion bonds/ insurance in place • Develop a co-marketing strategy</li>
+                        <li>Partner with commercially successful producers and studios across a diversified slate of films with a pre-sales distribution agreement, building guaranteed asset value in the fund</li>
+                        <li>Appoint SFF employees to each film production to supervise the project</li>
+                        <li>Put completion bonds/ insurance in place</li> 
+                        <li>Develop a co-marketing strategy</li>
                         <li>Hedge with similar funds</li>
                         <li>Benefit from tax reliefs</li>
-                        <li>Add on the music revenue stream as a plus (milestone)</li>
+                        <li>Add the film music as a dual revenue stream</li>
                     </ul>
 
                     <h2>Benefits</h2>
@@ -320,7 +345,7 @@ $PRODUCTION = TRUE;
                         <li>Loss Relief</li>
                     </ul>
 
-                    <p>*Only for UK Tax payers. Different tax relief schemes apply according to the country where the film is shot. e.g. Canada offers an even higher Initial Income Tax Relief of 48%.</p>
+                    <p>*Only for UK Tax payers. Different tax relief schemes apply according to the country where the film is shot.</p>
 
                     <p class="bold">Investment Return</p>
                     <ul>
@@ -328,7 +353,7 @@ $PRODUCTION = TRUE;
                         <li>Quick returns and long life investments</li>
                     </ul> 
 
-                    <h3>Exclusive Experience:</h3>                    
+                    <h3>Exclusive Experiences:</h3>                    
                     <ul>
                         <li>Visit the filmset and meet the cast and crew</li>
                         <li>Private screenings</li>
@@ -347,7 +372,7 @@ $PRODUCTION = TRUE;
 
                         <p>Music Producer and Composer Tom Linden has a proven Track record in writing and placing Music for Film &amp; Television. Tom has written the Channel 5 News music and his Compositions and Soundscapes have been used in TV Series such as Top Gear &amp; Green Wing, Documentaries including Northern Skies, as Idents for Desperate Housewives, MTV Cribs &amp; Discovery Channel and on Worldwide Adverts for Baileys, Orange, Visa, Amnesty International &amp; Firetrap. His Compositions feature regularly on all major Broadcasters.</p> 
 
-                        <p>Through his work he realised the importance of owning copyrights and publishing rights as another revenue stream for Investors. According to each individual Film and negotiations this may give the Investor a double opportunity to gain profits from both the Film Revenue and the Music rights. The Music rights can generate other income from sources such as Soundtrack, Licensing, TV deals, Royalties from international ticket sales and Sheet music sales.</p>
+                        <p>Through his work he realised the importance of owning copyrights and publishing rights as another revenue stream for Investors. According to each individual Film this may give the Investor a double opportunity to gain profits from both the Film Revenue and the Music rights. The Music rights can generate other income from sources such as Soundtrack, Licensing, TV deals, Royalties from international ticket sales and Sheet music sales.</p>
                     </div>
                 </article>                    
             </div><!-- End of content -->
@@ -371,22 +396,23 @@ $PRODUCTION = TRUE;
                     EIS investment company incorporated in England.
                     (Registration No. 07732786)</p>
 
-                    <p><span>Financial Year:</span> 2014</p>
+                    <p><span>Financial Year:</span> 2016</p>
 
                     <p><span>Base Currency:</span> GBP Minimumm 
-                    <span>Investment:</span> £100,000<br>
+                    <span>Investment:</span> £25,000<br>
                     <span>Charges and Fees:</span> Upfront fee 5%<br>
                     <span>Annual Management Fee:</span> 2%<br>
-                    <span>Performance Fee:</span> 35% of increase in NAV<br> 
+                    Hurdle Rate of 7% to be achieved before Performance Fee is taken<br>
+                    <span>Performance Fee:</span> 30% of increase in NAV<br> 
                     (payable quarterly in arrears only on compound returns)</p>
 
-                    <p><span>Dealing and Valuation Frequency:</span> Annualy<br>
+                    <p><span>Dealing and Valuation Frequency:</span> Annually<br>
                     <span>Investment Manager:</span> Soho Film Finance<br>
                     <span>Custodian/Administrator:</span> Graham Associates (International) Limited<br>
                     <span>Bank:</span> Royal Bank of Scotland<br> 
                     <span>Accountant Advisor:</span> Graham Associates (International) Limited</p> 
 
-                    <p><span>Business Address:</span> Level 33, 25 Canada Square, Canary Wharf, E14 5LQ, London, UK</p>
+                    <p><span>Business Address:</span> 48 Warwick Street, London, W1B 5NL</p>
                     
                     <p id="quote">
                         <span id="strong">A strong</span>
@@ -397,10 +423,10 @@ $PRODUCTION = TRUE;
                 
                 <article class="col-2">
                     <h2>Summary</h2>
-                    <p class="first">An alternative investment with a double digit return target!<br> 
-                        A tax relief scheme in place for UK Taxpayers!<br> 
-                        More than 25 years’ experience Strong and established relationships with film studios and distribution companies<br> 
-                        Strong credentials with a proven track record in making money<br>
+                    <p class="first">An alternative investment with a double digit return target<br> 
+                        A tax relief scheme in place for UK Taxpayers<br> 
+                        More than 25 years’ experience and Strong established relationships with film studios and distribution companies<br> 
+                        and a proven track record in making money<br>
                         A worldwide presence making the Fund accessible to anyone</p>
 
                     <h2>Risk factors</h2>
@@ -410,7 +436,7 @@ $PRODUCTION = TRUE;
 
                     <p>The information published and opinions expressed by the SFF are for personal use and for informational purposes only and are subject to change without notice. The SFF makes no representation (either express or implied) that the information and opinions expressed within this document are accurate, complete or up to date. In particular the SFF shall not be obliged to remove any outdated information from its publications or to expressly mark it as being outdated.</p> 
 
-                    <p>Nothing contained within this document constitutes financial, legal, tax or other advice, nor should any investment or any other decisions be made solely based on the content. You should obtain advice from a qualified expert before making any investment decision. The shares of the Fund are suitable only for sophisticated private and institutional investors who have sufficient financial resources at their disposal and who fully understand and are willing to assume the risks involved in the Fund’s investment objectives and policy as described in the prospectus. 
+                    <p>Nothing contained within this document constitutes financial, legal, tax or other advice, nor should any investment or any other decisions be made solely based on the content. You should obtain advice from a qualified expert before making any investment decision. The shares of the Fund are suitable only for sophisticated private and institutional investors who have sufficient financial resources at their disposal and who fully understand and are willing to assume the risks involved. All details of the Funds investment objectives and policies are described in the prospectus.
 
                     <p>For further information please refer to the SFF’s prospectus which may be obtained from the company’s registered office.</p>
                 </article>                    
@@ -426,13 +452,12 @@ $PRODUCTION = TRUE;
                  </div>
 
                 <div id="contact-info">
-                    <p>Soho Film Finance, Level 33, 25 Canada Square, Canary Wharf, E14 5LQ, London, UK</p> 
-                    <p>Soho Music Recording Studio, 39 Great Windmill Street, London W1D 7LX.</p>
+                    <p>48 Warwick<br> street<br> London<br> W1B 5NL</p>
 
                     <p class="website">www.sohofilmfinance.com</p>
                     <p><span>Phone:</span> 0207 038 8952</p>
                     <p><span>For Investments:</span> <a href="mailto:dcottarelli@sohofilmfinance.com">dcottarelli@sohofilmfinance.com</a><br>
-                    <span>For Film Submissions:</span> <a href="mailto:tlinden@sohofilmfinance.com">tlinden@sohofilmfinance.com</a></p>
+                    <span>For Film Submissions:</span> <a href="mailto:submissions@sohofilmfinance.com">submissions@sohofilmfinance.com</a></p>
 
                     <p>Varcale Capital Management Ltd, Register No. 07732786</p>
 
@@ -444,17 +469,36 @@ $PRODUCTION = TRUE;
             </div><!-- End of content -->
     </div><!-- End of wrapper -->
 </div> 
-    <footer>
-        <nav class="main-nav footer">
-            <ul>
-                <li><a href="#introduction">&copy; SOHO Film Finance</a></li>
-                <li><a href="#contact">Contact us</a></li>
-            </ul>            
-        </nav>
-    </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<footer>
+    <nav class="main-nav footer">
+        <ul>
+            <li><a href="#introduction">&copy; SOHO Film Finance</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>            
+    </nav>
+</footer>
+
+<script id="disclaimer_template" type="text/html">
+    <div class="lightbox-bg"></div>
+    <div class="lightbox-disclaimer">
+        <div class="lightbox-panel">
+            <div class="lightbox-content">
+            <h2>Disclaimer</h2>
+                <p>The information in this brochure has been compiled by Soho Film Finance and is intended to be used for information purposes only. It does not constitute investment advice and is not intended as an offer to buy, or for solicitation purposes, although every attempt has been made to ensure the accuracy of the information within this brochure.
+                SFF assumes no responsibility for any errors or omissions.</p>
+                <p>Investing in the film industry involves a high degree of risk to your money. It is meant for HNWI, professional investors only. Before investing in such markets you should be well aware of the risks involved. Do not invest funds you cannot afford to lose.</p>
+                <p>SFF’s brochure is translated into various languages for the added convenience of the client. In the event of con ict between the original English content and any translation in other languages, or any other translated communications by SFF, the english version shall prevail.</p>
+                <p>Soho Film Finance is a trading name of Varcale Capital Management Ltd Registered No. 07732786</p>
+                <p>Do you agree yes or no?</p>
+                <p><a id='cta-agree' href="#" class="close">Yes </a>            
+                <a href="http://google.com" class="close"> No </a></p>
+            </div>
+        </div>
+    </div>
+</script>
+
+<div id="disclaimer_rendered"></div>
 
 <?php if ($PRODUCTION) { ?>
 <script src="js/plugins.min.js"></script>
@@ -462,6 +506,7 @@ $PRODUCTION = TRUE;
 <?php } else { ?>
 <script src="js/vendor/skrollr.stylesheets.min.js"></script>
 <script src="js/vendor/skrollr.min.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
 <script src="js/main.js"></script>
 <?php } ?>
 </body>
