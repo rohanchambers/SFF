@@ -1,6 +1,6 @@
 <?php
 // Whether this is production version or not
-$PRODUCTION = FALSE;
+$PRODUCTION = TRUE;
 ?>
 
 <!DOCTYPE html>
@@ -323,8 +323,8 @@ $PRODUCTION = FALSE;
                     <h2>Investment Strategy</h2>
                     <ul>
                         <li>The SFF will invest principally in a portfolio of high profile film projects following these criteria:</li>
-                        <li>Invest a maximum 35% of the budget on an equity basis;</li>
-                        <li>Co-finance a mixed slate of relatively low-cost productions in conjunction with mainstream Hollywood movies in the dget range of £500K to £50 million;</li>
+                        <li>Invest a maximum 35% of the budget on an equity basis</li>
+                        <li>Co-finance a mixed slate of relatively low-cost productions in conjunction with mainstream Hollywood movies in the budget range of £500K to £50 million</li>
                         <li>Partner with commercially successful producers and studios across a diversified slate of films with a pre-sales distribution agreement, building guaranteed asset value in the fund</li>
                         <li>Appoint SFF employees to each film production to supervise the project</li>
                         <li>Put completion bonds/ insurance in place</li> 
@@ -456,7 +456,6 @@ $PRODUCTION = FALSE;
 
                     <p class="website">www.sohofilmfinance.com</p>
 
-                    For Film Submissions: enquiries@varcalecap.com
                     <p><span>Phone:</span> 0207 038 8952</p>
                     <p><span>For Film Submissions:</span> 
                     <a href="mailto:enquiries@varcalecap.com">enquiries@varcalecap.com</a><p>

@@ -14,10 +14,9 @@ $(function(){
 
     //Check cookie value
     if ($.cookie('disclaimer') != 'iagree') {
-        console.log('Not Set');
+        //console.log('Not Set');
 		$(lightbox).show();
 		$('body').addClass('stop-scrolling');
-		$('body').bind('touchmove', function(e){e.preventDefault()})
 
     } else {
         console.log('Its Set');
@@ -29,8 +28,7 @@ $(function(){
         $.cookie('disclaimer', 'iagree', { expires: 365, path: '/' });
 		$(lightbox).fadeOut()
 		$('body').removeClass('stop-scrolling');
-		$('body').unbind('touchmove')
-        console.log('clicked');
+        //console.log('clicked');
     });
 
 	//Animate scroll to sections

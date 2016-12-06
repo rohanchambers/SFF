@@ -984,8 +984,8 @@ footer {
     }
 }
 
-.lightbox-bg, 
-.lightbox-disclaimer {overflow-y: scroll; z-index: 1; position:fixed; top:0; left:0; width:100%; height:100%; }
+.lightbox-bg,
+.lightbox-disclaimer {overflow-y: scroll; z-index: 10000; position:fixed; top:0; left:0; width:100%; height:100%; }
 .lightbox-bg { background:#000; opacity:0.8; filter:alpha(opacity=8);}
 .lightbox-panel { position: relative; width: 500px; height: auto; margin: 100px auto;}
 .lightbox-content {  overflow-y: scroll; height: auto; border-top: 5px solid #8ea4af; background-color: #FFF; padding: 15px;}
@@ -1007,6 +1007,7 @@ footer {
         &.btn-global:hover {
             background-color: #CCC;
             color: #333;
+            text-decoration: none;
             -webkit-transition: all 500ms ease;
                 -moz-transition: all 500ms ease;
                     -ms-border-radius: all 500ms ease;
@@ -1262,17 +1263,17 @@ footer {
         padding-top: 0px;
         width: auto;
     }
-    
-    // .lightbox-content {
-    //     padding: 4%;
-    //     width: 80%;
-    //     border: none;
-    // }
-    
-    // .lightbox-panel {
-    //     width: auto;
-    //     margin: 40px auto 0 auto;
-    // }
+
+    .lightbox-panel {
+        width: auto;
+        margin: 0px auto 0 auto;
+    }
+
+    .lightbox-content {
+        max-height: 570px;
+        overflow-x:hidden;
+        overflow-y:scroll;      
+    }
 
     .col-1,
     .col-2 {
