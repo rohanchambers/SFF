@@ -28,24 +28,43 @@ module.exports = function (grunt) {
 		        'css/main.css': 'css/main.scss'
 		      }
 		    }
-		  },		  
+		  },
+
 		cssmin: {
 		  combine: {
 		    files: {
 		      'css/main.min.css': ['css/normalize.css', 'css/main.css']
 		    }
 		  }
-		}				
+		},
+
+ 		// Watch task config
+		watch: {
+			html: {
+				files: '/',
+			},
+			css: {
+				files: 'css/*.scss',
+				tasks: ['sass']
+			},
+			js: {
+				files: 'js/*.js',
+			}
+		}						
 	});
 	
   // Load the plugins
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');  
   
-  // Default task(s).
-  grunt.registerTask('default', ['jshint','uglify', 'concat', 'sass', 'cssmin']);	
+	// Dev
+grunt.registerTask('default', ['watch']);
+
+// Default task(s).
+grunt.registerTask('grunt prod', ['jshint','uglify', 'concat', 'sass', 'cssmin']);	
   
 };

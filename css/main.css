@@ -124,6 +124,10 @@ a:hover {
 #mobile-logo {
   display: none; }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden; }
+
 /* NAV */
 header,
 footer {
@@ -330,6 +334,9 @@ footer {
 /* DIRECTORS SLIDE */
 #directors .container {
   padding-top: 60px; }
+  #directors .container .content .col-2 {
+    float: left;
+    margin-left: 0; }
 
 #directors .header-box {
   position: relative;
@@ -921,6 +928,10 @@ footer {
     padding-top: 0px;
     width: auto; }
 
+  .lightbox-panel {
+    width: 100% !important;
+    overflow-x: scroll; }
+
   .col-1,
   .col-2 {
     float: none !important;
@@ -1167,6 +1178,62 @@ footer {
   h2,
   h3 {
     page-break-after: avoid; } }
+.lightbox-bg,
+.lightbox-disclaimer {
+  overflow-y: scroll;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.lightbox-bg {
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=8); }
+
+.lightbox-panel {
+  position: relative;
+  width: 500px;
+  height: auto;
+  margin: 100px auto; }
+
+.lightbox-content {
+  overflow-y: scroll;
+  height: auto;
+  border-top: 5px solid #8ea4af;
+  background-color: #FFF;
+  padding: 15px; }
+
+.lightbox-content a {
+  color: #000; }
+
+.no-js #lightbox {
+  position: relative;
+  width: 430px;
+  display: block;
+  float: right; }
+
+.no-js #lightbox-content {
+  float: left;
+  margin-top: 15px;
+  padding: 0;
+  background: none; }
+
+.no-js #lightbox-panel {
+  width: 430px;
+  margin: 0; }
+
+.no-js #close {
+  display: none; }
+
+.no-js .home #lightbox {
+  float: left; }
+
+.no-js .home #lightbox h2 {
+  padding-top: 10px; }
+
 /*Notes*/
 /*
 
@@ -1182,7 +1249,7 @@ padding-top: 60
 mission 50 / 45
 padding-top: 60
 
-regulatory 50 / 50 
+regulatory 50 / 50
 padding-top: 60
 
 our-products 48 / 48

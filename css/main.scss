@@ -88,15 +88,15 @@ $primary-color: #8ea4af;
     url('../fonts/univers/univers-49/univers-49-ultra-condensed-light.svg#fonts/univers/univers-49/univers-49-ultra-condensed-light') format('svg'); /* Legacy iOS */
 }
 
-h1, 
+h1,
 #about-us p,
 #mission-points li span,
 #what-we-offer li span,
 #mobile-logo {
-     font-family: 'trajanPro', serif; 
+     font-family: 'trajanPro', serif;
 }
 
-h2, h3, 
+h2, h3,
 #milesAhead,
 #arrow p,
 #regulatory-environment p,
@@ -111,11 +111,11 @@ h2, h3,
 }
 
 /* Typgraphy */
-h1 { 
+h1 {
     font-size: 22px;
 }
 
-h2 {     
+h2 {
     font-size: 32px;
     text-transform: uppercase;
     color: $primary-color;
@@ -158,18 +158,23 @@ a:hover {
     display: none;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* NAV */
-header, 
+header,
 footer {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    min-height: 35px;           
-    background: $primary-color;    
+    min-height: 35px;
+    background: $primary-color;
 }
 
     footer {
-        bottom: 0; 
+        bottom: 0;
         min-height: 25px;
 
         .main-nav {
@@ -193,7 +198,7 @@ footer {
         margin: 0 auto;
         width: 960px;
         background: $primary-color;
-            
+
             ul {
                 margin: 0;
                 padding: 0;
@@ -203,14 +208,14 @@ footer {
                 display: block;
                 float: left;
                 width: auto;
-                margin: 0 10px; 
+                margin: 0 10px;
                 min-height: 35px;
             }
 
             #nav-item-one {
                 margin-left: 0;
             }
-            
+
             a {
                 font-size: 20px;
                 color: #FFF;
@@ -233,8 +238,8 @@ footer {
     @extend .clearfix;
 }
 
-#introduction, #welcome, #directors, #milesAhead, #mission, 
-#regulatory, #our-products, #music-rights, #our-process, 
+#introduction, #welcome, #directors, #milesAhead, #mission,
+#regulatory, #our-products, #music-rights, #our-process,
 #summary, #contact {
     border-top: 10px solid $primary-color;
 }
@@ -246,7 +251,7 @@ footer {
     padding-top: 60px;
 }
 
-    .content {  
+    .content {
         width: 100%;
         padding: 0 0 0 0;
     }
@@ -283,7 +288,7 @@ footer {
           -ms-border-radius: $radius;
               border-radius: $radius;
     }
- 
+
     #logo {
         position: absolute;
         top: 15%;
@@ -291,9 +296,9 @@ footer {
         width: 165px;
         height: 165px;
         border: 20px solid $primary-color;
-        @include border-radius(165px);        
+        @include border-radius(165px);
         background: #FFF url(../img/intro/logo_SFF.png) no-repeat 10px 33px;
-        background-size: 98%; 
+        background-size: 98%;
     }
 
     #joy {
@@ -307,14 +312,14 @@ footer {
         text-transform: uppercase;
         text-align: center;
         color: #FFF;
-        @include border-radius(173px);        
+        @include border-radius(173px);
         background: $primary-color;
     }
 
     #circle-top {
         position: absolute;
         top: 28%;
-        left: 0%;        
+        left: 0%;
         width: 60px;
         height: 60px;
         @include border-radius(60px);
@@ -324,28 +329,28 @@ footer {
     #circle-bottom {
         position: absolute;
         top: 38%;
-        left: 0%;        
+        left: 0%;
         width: 60px;
         height: 60px;
         @include border-radius(60px);
         background: $primary-color;
-    }   
-    
+    }
+
     #circle-small {
         position: absolute;
         top: 35%;
-        left: 10%;        
+        left: 10%;
         width: 30px;
         height: 30px;
         @include border-radius(30px);
         background: $primary-color;
-    } 
+    }
 
     #scroll-down {
         display: block;
         margin: 35px 0 0 0;
         font-family: Verdana, Arial, sans-serif;
-        font-size: 12px;              
+        font-size: 12px;
         line-height: 1.1;
         text-align: center;
         text-transform: none;
@@ -355,16 +360,16 @@ footer {
 
 /* WELCOME SLIDE */
 #welcome {
-    height: 1000px;    
+    height: 1000px;
     min-height: 100%;
     background: transparent;
 }
-    
+
     #london-landscape {
         position: relative;
         z-index: 100;
-        height: 1000px;    
-        min-height: 100%;        
+        height: 1000px;
+        min-height: 100%;
         background: transparent url(../img/bg_london.png) repeat-x bottom center fixed;
         background-size: 90%;
     }
@@ -373,7 +378,7 @@ footer {
         position: relative;
         padding: 0;
     }
-    
+
     /*Override col widths*/
     #welcome .col-1,
     #welcome .col-2 {
@@ -382,7 +387,7 @@ footer {
     }
 
         #intro h1 {
-            margin-bottom: 30px;    
+            margin-bottom: 30px;
         }
 
         #intro p {
@@ -402,6 +407,14 @@ footer {
 /* DIRECTORS SLIDE */
 #directors .container {
     padding-top: 60px;
+
+    .content {
+        .col-2 {
+            float: left;
+            margin-left: 0;
+        }
+    }
+
 }
 
     #directors .header-box {
@@ -410,7 +423,7 @@ footer {
         display: block;
         width: 100%;
         height: 140px;
-        background-color: $primary-color;        
+        background-color: $primary-color;
 
             h2 {
                 position: absolute;
@@ -445,7 +458,7 @@ footer {
 
 /* MILES AHEAD SLIDE */
 #milesAhead {
-    
+
     .content {
 
         .col-1, .col-2 {
@@ -471,7 +484,7 @@ footer {
         color: $primary-color;
     }
 
-    @-moz-document url-prefix() { 
+    @-moz-document url-prefix() {
       #text-be {
          line-height: 80%;
       }
@@ -513,7 +526,7 @@ footer {
         top: 0%;
         right: 7%;
         width: 219px;
-        height: 130px;        
+        height: 130px;
         background: url(../img/milesAhead/milesAhead_group.jpg) no-repeat;
     }
 
@@ -534,7 +547,7 @@ footer {
     min-height: 920px;
     margin: 0;
     padding-top: 80px;
-    background-color: #e4eaed;        
+    background-color: #e4eaed;
 }
 
 #mission .col-2 {
@@ -554,10 +567,10 @@ footer {
         p {
             font-size: 22px;
             color: #FFF;
-            text-transform: uppercase;        
+            text-transform: uppercase;
             line-height: 60px;
             text-align: left;
-            padding-left: 10px;            
+            padding-left: 10px;
         }
     }
 
@@ -576,7 +589,7 @@ footer {
             padding-left: 100px;
             background: url(../img/mission/bg_bullet.png) no-repeat top left;
             background-size: 30%;
-            
+
             span {
                 position: absolute;
                 top: 20%;
@@ -595,7 +608,7 @@ footer {
             p {
                 margin: 0;
             }
-        }    
+        }
     }
 
 #worldwide h2 {
@@ -608,7 +621,7 @@ footer {
 }
 
 
-/* REGULATORY ENVIRONMENT */ 
+/* REGULATORY ENVIRONMENT */
 #regulatory .col-1,
 #regulatory .col-2 {
     width: 50%;
@@ -622,7 +635,7 @@ footer {
         float: right;
     }
 
-        #regulatory .col-2 { 
+        #regulatory .col-2 {
             background-color: #e4eaed;
         }
 
@@ -647,7 +660,7 @@ footer {
     height: 377px;
     margin: 0 auto;
     text-align: center;
-    background: url(../img/regulatory/bg_star.png) no-repeat top center; 
+    background: url(../img/regulatory/bg_star.png) no-repeat top center;
     background-size: 100%;
 
         span {
@@ -662,14 +675,14 @@ footer {
             line-height: 1;
             text-transform: uppercase;
             color: #FFF;
-        }   
+        }
 }
 
     #credentials-list {
-        
+
         width: 100%;
         padding: 0;
-        
+
         li {
             display: block;
             margin-bottom: 20px;
@@ -691,25 +704,25 @@ footer {
 #our-products .col-2 {
     width: 48%;
     min-height: 760px;
-    margin: 0;   
+    margin: 0;
     padding: 60px 0 20px 0;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
     #our-products-copy {
         min-height: 308px;
         padding-left: 175px;
         background: url(../img/products/bg_products.png) no-repeat top left;
-        
+
             p {
                 font-size: 20px;
             }
     }
 
 #what-we-offer {
-    
+
     margin-top: 50px;
-    
+
     h2 {
         text-align: center;
     }
@@ -726,7 +739,7 @@ footer {
             list-style: none;
             background: url(../img/mission/bg_bullet.png) no-repeat top left;
             background-size: 100%;
-            font-weight: bold;            
+            font-weight: bold;
         }
 
         span {
@@ -760,7 +773,7 @@ footer {
                 -ms-transform: rotate(0deg); /* IE 9 */
                     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
 
-            background: url(../img/products/bg_SFF_circle.png) no-repeat; 
+            background: url(../img/products/bg_SFF_circle.png) no-repeat;
         }
 
         #scenario-copy {
@@ -772,18 +785,18 @@ footer {
             padding: 110px 0 30px 0;
             background: $primary-color;
             color: #FFF;
-                
+
                 h2 {
                     color: #FFF;
                     width: 82%;
-                    margin: 0 8%;  
+                    margin: 0 8%;
                 }
 
                 p {
                     width: 82%;
                     margin-left: 8%;
-                    margin-right: 8%;                          
-                }            
+                    margin-right: 8%;
+                }
         }
 }
 
@@ -849,7 +862,7 @@ footer {
 #our-process img {
     max-width: 100%;
     height: auto;
-}   
+}
 
 
 /* SUMMARY */
@@ -863,12 +876,12 @@ footer {
         margin: 15px auto 40px auto;
         font-size: 25px;
         text-align: center;
-    }    
+    }
 }
 
     #fund-facts {
         text-align: center;
-        
+
         span {
             color: $primary-color;
             font-weight: bold;
@@ -885,10 +898,10 @@ footer {
             text-align: left;
         }
 
-            #strong { 
+            #strong {
                 font-size: 75px;
             }
-            
+
             #reliable {
                 font-size: 28px;
                 color: #000!important;
@@ -897,12 +910,12 @@ footer {
 
             #serious {
                 font-size: 16px;
-            }        
+            }
     }
 
 
 /* CONTACT US */
-#contact { 
+#contact {
     h2 {
         font-size: 50px;
         text-align: center;
@@ -924,7 +937,7 @@ footer {
             display: block;
             margin: 0 auto;
             z-index: 0
-        }        
+        }
 
         #map-pointer {
             position: absolute;
@@ -932,7 +945,7 @@ footer {
             left: 50%;
             z-index: 10;
             margin-left: -75px;
-            width: 157px;        
+            width: 157px;
             height: 225px;
             background: url(../img/contact/bg_map_pointer.png) no-repeat;
         }
@@ -946,7 +959,7 @@ footer {
         color: #FFF;
         text-align: center;
         background-color: $primary-color;
-        
+
         span {
             color: #000;
         }
@@ -1052,7 +1065,7 @@ footer {
         /*background: purple;*/
         margin: 0 2%;
         width: auto;
-    }   
+    }
 
         #welcome .col-1 {
             float: left;
@@ -1112,22 +1125,22 @@ footer {
         float: none;
     }
 
-    #mission .col-1, 
+    #mission .col-1,
     #mission .col-2,
-    #regulatory .col-1, 
+    #regulatory .col-1,
     #regulatory .col-2,
-    #our-products .col-1, 
+    #our-products .col-1,
     #our-products .col-2,
-    #music-rights .col-1, 
-    #music-rights .col-2,    
-    #summary .col-1, 
+    #music-rights .col-1,
+    #music-rights .col-2,
+    #summary .col-1,
     #summary .col-2 {
         float: none!important;
         width: auto!important;
         margin: 0!important;
         padding: 30px 0;
         height: auto;
-        min-height: 100%;                       
+        min-height: 100%;
     }
 
         #mission-points {
@@ -1184,7 +1197,7 @@ footer {
 
         #scenario #circle {
             width: 63%;
-        }        
+        }
 
         #our-process {
             min-height: 0;
@@ -1203,16 +1216,21 @@ footer {
 /*        background: green;*/
         margin: 0 2%;
         padding-top: 0px;
-        width: auto;    
+        width: auto;
+    }
+    
+    .lightbox-panel {
+        width: 100%!important;
+        overflow-x: scroll;
     }
 
-    .col-1, 
+    .col-1,
     .col-2 {
         float: none!important;
         width: auto!important;
         margin: 0!important;
         padding-top: 30px!important;
-    }   
+    }
 
     #directors .col-1,
     #directors .col-2 {
@@ -1240,14 +1258,14 @@ footer {
     }
 
     #logo {
-        top: 9%;  
+        top: 9%;
         left: 3%;
     }
 
     #circle-top {
-        top: 10%;        
+        top: 10%;
         right: 10%;
-        left: auto;        
+        left: auto;
     }
 
     #circle-small {
@@ -1290,7 +1308,7 @@ footer {
             left: 18%;
          }
     }
-    
+
     #quote {
         margin-top: 0;
 
@@ -1321,13 +1339,13 @@ footer {
     .container {
 /*        background: yellow;*/
         margin: 0 2%;
-        width: auto;    
-    }   
+        width: auto;
+    }
 
     #mission-points li {
         background-size: 27%;
     }
-    
+
     #star {
         width: 95%;
     }
@@ -1335,7 +1353,7 @@ footer {
     #credentials-list {
         width: auto;
         margin: 0 2%;
-    }   
+    }
 
     #what-we-offer ul li {
         width: auto;
@@ -1347,7 +1365,7 @@ footer {
     #what-we-offer ul span {
         top: 20px;
         left: 10%;
-    }    
+    }
 
     #our-products-copy {
         padding: 0;
@@ -1371,7 +1389,7 @@ footer {
         }
 
         #logo {
-            top: 10%;  
+            top: 10%;
             left: 3%;
         }
 
@@ -1401,11 +1419,11 @@ footer {
             border-radius: 0;
             line-height: normal;
             color: transparent;
-        }        
+        }
     }
 }
- 
-  
+
+
 
 
 @media print,
@@ -1544,8 +1562,22 @@ footer {
     }
 }
 
-
-
+.lightbox-bg, 
+.lightbox-disclaimer {overflow-y: scroll; z-index: 1; position:fixed; top:0; left:0; width:100%; height:100%; }
+.lightbox-bg { background:#000; opacity:0.8; filter:alpha(opacity=8);}
+.lightbox-panel { position: relative; width: 500px; height: auto; margin: 100px auto;}
+.lightbox-content {  overflow-y: scroll; height: auto; border-top: 5px solid #8ea4af; background-color: #FFF; padding: 15px;}
+.lightbox-content a {
+    color: #000;
+}
+// .close { position:absolute; top:-20px; right:0;}
+// .close a { color: #FFF;}
+.no-js #lightbox { position: relative; width: 430px; display: block; float: right;}
+.no-js #lightbox-content { float: left; margin-top: 15px; padding: 0; background: none;}
+.no-js #lightbox-panel { width: 430px; margin: 0;}
+.no-js #close { display: none;}
+.no-js .home #lightbox { float: left;}
+.no-js .home #lightbox h2 { padding-top: 10px;}
 
 /*Notes*/
 
@@ -1563,7 +1595,7 @@ padding-top: 60
 mission 50 / 45
 padding-top: 60
 
-regulatory 50 / 50 
+regulatory 50 / 50
 padding-top: 60
 
 our-products 48 / 48
