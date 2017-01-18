@@ -484,13 +484,18 @@ $PRODUCTION = TRUE;
     <div class="lightbox-disclaimer">
         <div class="lightbox-panel">
             <div class="lightbox-content">
-            <h2>Disclaimer</h2>
-                <p>The information in this brochure has been compiled by Soho Film Finance and is intended to be used for information purposes only. It does not constitute investment advice and is not intended as an offer to buy, or for solicitation purposes, although every attempt has been made to ensure the accuracy of the information within this brochure.
-                SFF assumes no responsibility for any errors or omissions.</p>
-                <p>Investing in the film industry involves a high degree of risk to your money. It is meant for HNWI, professional investors only. Before investing in such markets you should be well aware of the risks involved. Do not invest funds you cannot afford to lose.</p>
-                <p>SFF’s brochure is translated into various languages for the added convenience of the client. In the event of con ict between the original English content and any translation in other languages, or any other translated communications by SFF, the english version shall prevail.</p>
-                <p>Soho Film Finance is a trading name of Varcale Capital Management Ltd Registered No. 07732786</p>
-                <p>Do you agree yes or no?</p>
+                <h2>Disclaimer</h2>
+                <p>The content in this website has not been approved by an authorised person within the meaning of the Financial Services and Markets Act 2000. Reliance on this content for the purpose of engaging in any investment activity may expose an individual to a significant risk of losing property or other assets invested. If you are in any doubt about the offer, the content in this website and / or any action you should take, you should consult an independent financial advisor or other authorised person under the FSMA who specialise in advising on transactions of this nature.</p>
+                 
+                <p>SFF (Soho Film Finance) assumes no responsibility for any errors or omissions although every attempt has been made to ensure the accuracy of the information in this website.</p>
+                 
+                <p>The content in this website has been supplied as a guide only and prospective investors must make their own investigations to satisfy themselves as to the condition, and prospects of the business, and the accuracy and completeness of the statements therein. </p>
+                 
+                <p>Prospective investors must make their own examination of the legal, taxation, financial and other consequences of investment and Investors should not treat the contents of this website as advice relating to financial matters and, if in any doubt about the proposal discussed in this website, its suitability, or what action should be taken, should consult a person authorised and regulated by the FCA under FSMA and qualifies to advise on investments.</p>
+                 
+                <p>Investing in the film industry involves a high degree of risk to your money. It is meant for HNWI, professional investors only. Before investing with us you should be well aware of the risks involved. Do not invest funds you cannot afford to lose.</p>
+                 
+                <p>Have you read and accepted the above?</p>
                 <p><a id='cta-agree' href="#" class="close btn-global">Yes </a>            
                 <a href="http://google.com" class="close btn-global"> No </a></p>
             </div>
