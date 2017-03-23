@@ -130,9 +130,13 @@ $PRODUCTION = TRUE;
                     </div>
 
                     <div class="profile">
-                        <img src="img/directors/kristin.jpg" alt="Kristin Yeatman, Financing Specialist">
-                        <h3>Kristin Yeatman, Financing Specialist</h3> 
-                        <p>She has more than 18 years of financing experience. In addition to senior positions at several global banks including Lloyd’s, she has also held consulting roles at Blackrock Solutions and (currently) Moody’s Analytics. Kristin’s solid background in corporate finance and project assessment is complemented by an artistic flair that makes her an ideal addition to the team.</p>
+                        <img src="img/directors/tony.jpg" alt="Tony Taglienti, Director - Strategic Distribution Partner">
+                        <h3>Tony Taglienti, Director - Strategic Distribution Partner</h3> 
+                        <p>Tony has over 30 years’ experience in acquisition, production and publishing in the international home video market. He was directly instrumental in bringing the FIFA World Cup to the global video market for the first time ever and held the exclusive international home video rights for several of the FIFA &amp; UEFA Championships.</p>
+ 
+                        <p>Tony came into the home video market in its infancy and helped develop the special interest sector of the home video market that included everything from sport, fitness, wild life, music and children’s programming.  Over the past 10 years Tony has been involved with feature films of every genre and budget range.</p>
+                         
+                        <p>His company 4Digital Media our Strategic Distribution Partner is one of a few global, third party distributed labels of Sony Pictures Home Entertainment, and the only one in the UK. </p>
                     </div>
                 </article>
 
@@ -320,20 +324,6 @@ $PRODUCTION = TRUE;
 
                     <p id="forecasting">Conservatively forecasting annualised returns to investors in the range of 15-20% Per Annum.</p>
 
-                    <h2>Investment Strategy</h2>
-                    <ul>
-                        <li>The SFF will invest principally in a portfolio of high profile film projects following these criteria:</li>
-                        <li>Invest a maximum 35% of the budget on an equity basis</li>
-                        <li>Co-finance a mixed slate of relatively low-cost productions in conjunction with mainstream Hollywood movies in the budget range of £500K to £50 million</li>
-                        <li>Partner with commercially successful producers and studios across a diversified slate of films with a pre-sales distribution agreement, building guaranteed asset value in the fund</li>
-                        <li>Appoint SFF employees to each film production to supervise the project</li>
-                        <li>Put completion bonds/ insurance in place</li> 
-                        <li>Develop a co-marketing strategy</li>
-                        <li>Hedge with similar funds</li>
-                        <li>Benefit from tax reliefs</li>
-                        <li>Add the film music as a dual revenue stream</li>
-                    </ul>
-
                     <h2>Benefits</h2>
                     <h3>Financial Benefits:</h3>
                     <p class="bold">Tax Relief*</p>
@@ -484,19 +474,20 @@ $PRODUCTION = TRUE;
     <div class="lightbox-disclaimer">
         <div class="lightbox-panel">
             <div class="lightbox-content">
-                <h2>Disclaimer</h2>
-                <p>The content in this website has not been approved by an authorised person within the meaning of the Financial Services and Markets Act 2000. Reliance on this content for the purpose of engaging in any investment activity may expose an individual to a significant risk of losing property or other assets invested. If you are in any doubt about the offer, the content in this website and / or any action you should take, you should consult an independent financial advisor or other authorised person under the FSMA who specialise in advising on transactions of this nature.</p>
+                <h2>DISCLAIMER</h2>
+                               
+                <p>The content in this website has not been approved by an authorised person within the meaning of the Financial Services and Markets Act 2000. Reliance on this content for the purpose of engaging in any investment activity may expose an individual to a significant risk of losing property or other assets invested.  If you are in any doubt about the offer, the content in this website and / or any action you should take, you should consult an independent financial advisor or other authorised person under the FSMA who specialise in advising on transactions of this nature.</p>
                  
                 <p>SFF (Soho Film Finance) assumes no responsibility for any errors or omissions although every attempt has been made to ensure the accuracy of the information in this website.</p>
                  
-                <p>The content in this website has been supplied as a guide only and prospective investors must make their own investigations to satisfy themselves as to the condition, and prospects of the business, and the accuracy and completeness of the statements therein. </p>
+                <p>The content in this website has been supplied as a guide only and prospective investors must make their own investigations to satisfy themselves as to the condition, and prospects of the business, and the accuracy and completeness of the statements therein.</p>
                  
                 <p>Prospective investors must make their own examination of the legal, taxation, financial and other consequences of investment and Investors should not treat the contents of this website as advice relating to financial matters and, if in any doubt about the proposal discussed in this website, its suitability, or what action should be taken, should consult a person authorised and regulated by the FCA under FSMA and qualifies to advise on investments.</p>
                  
                 <p>Investing in the film industry involves a high degree of risk to your money. It is meant for HNWI, professional investors only. Before investing with us you should be well aware of the risks involved. Do not invest funds you cannot afford to lose.</p>
                  
                 <p>Have you read and accepted the above?</p>
-                <p><a id='cta-agree' href="#" class="close btn-global">Yes </a>            
+                <p><a href="#" id='cta-agree' class="close btn-global">Yes </a>            
                 <a href="http://google.com" class="close btn-global"> No </a></p>
             </div>
         </div>
