@@ -23,7 +23,7 @@ $(function(){
 		$(lightbox).hide();
     }
 
-    // Attach click function to button '#agree' to set cookie
+    //Attach click function to button '#agree' to set cookie
     $('#cta-agree').click( function(){
         $.cookie('disclaimer', 'iagree', { expires: 365, path: '/' });
 		$(lightbox).fadeOut()

@@ -107,8 +107,8 @@ $PRODUCTION = TRUE;
                     <div class="profile">
                         <img src="img/directors/davide.jpg" alt="Davide Cottarelli, CEO">
                         <h3>Davide Cottarelli, CEO</h3>
-                        <p>With a masters degree in PR and a major in Marketing and Communications, Davide has more than 15 years of sales experience. He is an associate member of the Chartered Security Investment Institute and a fully qualified Stockbroker, CFD, FX and Commodities Trader. His past experience involved projects in the City with stock brokerage houses, FX brokering and introducing businesses to many top prime dealer brokers and investment banks.</p>
-                        <p>Davide is an Executive Producer of the film “The Exorcism of Anna Ecklund” and a BAFTA Ambassador &amp; Asian Patron. He is also a joint founder of the China UK Film Fund which has seed investment of £50 million rising to £1.5 billion by 2020.</p>
+                        <p>With a masters degree in PR and a major in Marketing and Communications, Davide has more than 15 years of sales experience. He is an associate member of the Chartered Security Investment Institute and a fully qualified Stockbroker, CFD, FX and Commodities Trader. His past experience involved projects in the City with stock brokerage houses, FX brokering and introducing businesses to many top prime dealer brokers and investment banks.
+                        Davide is an Executive Producer of the film “The Exorcism of Anna Ecklund” and a BAFTA in Asia Patron. He is also a joint founder of the China UK Film Fund which has seed investment of £50 million rising to £1.5 billion by 2020.</p>
                     </div>
 
                     <div class="profile">
@@ -452,7 +452,8 @@ $PRODUCTION = TRUE;
                     <p>Varcale Capital Management Ltd, Register No. 07732786</p>
 
                     <div id="credits">
-                        <p>web developer - <a href="http://www.rohanchambers.net" target="_blank">RohanChambers.net</a></p>
+                        <p>Site built by: <a href="http://www.slamdunkdigital.com" target="_blank">Slam Dunk Digital</a></p>
+                        <p style="position: absolute;top: -9999px;left: -9999px;">web developer - <a href="http://www.rohanchambers.net" target="_blank">RohanChambers.net</a></p>
                         <p>Stock : Shutterstock - Art Direction &amp; design : Laurent Graudens</p>
                     </div>
                 </div>
