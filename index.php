@@ -128,16 +128,6 @@ $PRODUCTION = TRUE;
                         <p>Robert is a Director of Graham Associates (International) Ltd, and has been a practicing accountant for over 23 years. He is an International Accountant (in the UK), based in Wales, London and Los Angeles. Rob has a track record of helping to produce British and international films by ensuring film investors enjoy the best available tax incentives by financially managing the investment and minimizing risk. He is a member of the Enterprise Investment Scheme Association, recognized by HM Treasury and is committed to excellence in creating sound, tax efficient investment schemes, they have provided financial contractual advice to major international film and TV organisations and talent agencies.</p>
                         <p>Having worked on over 30 films in the UK and internationally with budgets ranging from the lower end to multi million pound projects, Graham has built a reputation for honesty and total transparency both in the UK and in the US. Rob is also a director of several film production companies in the UK and US and is personal accountant to several well-known British actors, TV personalities and international talent. He is also a Patron of the anti knife and gun crime charity, The Ben Kinsella Trust.</p>
                     </div>
-
-                    <div class="profile">
-                        <img src="img/directors/tony.jpg" alt="Tony Taglienti, Director - Strategic Distribution Partner">
-                        <h3>Tony Taglienti, Director - Strategic Distribution Partner</h3> 
-                        <p>Tony has over 30 years’ experience in acquisition, production and publishing in the international home video market. He was directly instrumental in bringing the FIFA World Cup to the global video market for the first time ever and held the exclusive international home video rights for several of the FIFA &amp; UEFA Championships.</p>
- 
-                        <p>Tony came into the home video market in its infancy and helped develop the special interest sector of the home video market that included everything from sport, fitness, wild life, music and children’s programming.  Over the past 10 years Tony has been involved with feature films of every genre and budget range.</p>
-                         
-                        <p>His company 4Digital Media our Strategic Distribution Partner is one of a few global, third party distributed labels of Sony Pictures Home Entertainment, and the only one in the UK. </p>
-                    </div>
                 </article>
 
 <!--                 <article class="col-2 dist-advisors">
